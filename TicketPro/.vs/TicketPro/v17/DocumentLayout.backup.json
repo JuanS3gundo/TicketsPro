@@ -1,0 +1,48 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Juan Segundo\\TicketsPro\\TicketPro\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3E60B201-4251-4C47-A5C4-DB595B045B8F}|TicketPro.csproj|c:\\users\\juan segundo\\ticketspro\\ticketpro\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3E60B201-4251-4C47-A5C4-DB595B045B8F}|TicketPro.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Juan Segundo\\TicketsPro\\TicketPro\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\Juan Segundo\\TicketsPro\\TicketPro\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T22:32:03.023Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
