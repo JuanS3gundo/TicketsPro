@@ -1,0 +1,6 @@
+C:\Users\Juan Segundo\TicketsPro\Services\bin\Debug\Services.dll
+C:\Users\Juan Segundo\TicketsPro\Services\bin\Debug\Services.pdb
+C:\Users\Juan Segundo\TicketsPro\Services\obj\Debug\Services.csproj.AssemblyReference.cache
+C:\Users\Juan Segundo\TicketsPro\Services\obj\Debug\Services.csproj.CoreCompileInputs.cache
+C:\Users\Juan Segundo\TicketsPro\Services\obj\Debug\Services.dll
+C:\Users\Juan Segundo\TicketsPro\Services\obj\Debug\Services.pdb

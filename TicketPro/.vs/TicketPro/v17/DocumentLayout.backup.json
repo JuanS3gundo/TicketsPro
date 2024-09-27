@@ -3,8 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Juan Segundo\\TicketsPro\\TicketPro\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3E60B201-4251-4C47-A5C4-DB595B045B8F}|TicketPro.csproj|c:\\users\\juan segundo\\ticketspro\\ticketpro\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C19C82DE-C237-474B-ACFB-C73EBDFC3FC6}|..\\Services\\Services.csproj|c:\\users\\juan segundo\\ticketspro\\services\\implementations\\loggerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C19C82DE-C237-474B-ACFB-C73EBDFC3FC6}|..\\Services\\Services.csproj|c:\\users\\juan segundo\\ticketspro\\services\\domainmodel\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C19C82DE-C237-474B-ACFB-C73EBDFC3FC6}|..\\Services\\Services.csproj|c:\\users\\juan segundo\\ticketspro\\services\\services\\loggerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C19C82DE-C237-474B-ACFB-C73EBDFC3FC6}|..\\Services\\Services.csproj|c:\\users\\juan segundo\\ticketspro\\services\\bll\\loggerbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C19C82DE-C237-474B-ACFB-C73EBDFC3FC6}|..\\Services\\Services.csproj|c:\\users\\juan segundo\\ticketspro\\services\\dao\\contracts\\ilogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C19C82DE-C237-474B-ACFB-C73EBDFC3FC6}|..\\Services\\Services.csproj|c:\\users\\juan segundo\\ticketspro\\services\\implementations\\ijoinrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E60B201-4251-4C47-A5C4-DB595B045B8F}|TicketPro.csproj|C:\\Users\\Juan Segundo\\TicketsPro\\TicketPro\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3E60B201-4251-4C47-A5C4-DB595B045B8F}|TicketPro.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C19C82DE-C237-474B-ACFB-C73EBDFC3FC6}|..\\Services\\Services.csproj|c:\\users\\juan segundo\\ticketspro\\services\\domainmodel\\familia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C19C82DE-C237-474B-ACFB-C73EBDFC3FC6}|..\\Services\\Services.csproj|c:\\users\\juan segundo\\ticketspro\\services\\domainmodel\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C19C82DE-C237-474B-ACFB-C73EBDFC3FC6}|..\\Services\\Services.csproj|c:\\users\\juan segundo\\ticketspro\\services\\domainmodel\\patente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEC99B65-73AC-4A43-B7DE-6BC4DE325537}|..\\Entity\\Entity.csproj|c:\\users\\juan segundo\\ticketspro\\entity\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C39D0BE2-F57B-480B-9710-C3DF82EE1C97}|..\\BLL\\BLL.csproj|c:\\users\\juan segundo\\ticketspro\\bll\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1982126D-6132-43D9-ABD0-62165D93601C}|..\\DAL\\DAL.csproj|c:\\users\\juan segundo\\ticketspro\\dal\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,15 +50,177 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "LoggerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Juan Segundo\\TicketsPro\\Services\\Implementations\\LoggerRepository.cs",
+              "RelativeDocumentMoniker": "..\\Services\\Implementations\\LoggerRepository.cs",
+              "ToolTip": "C:\\Users\\Juan Segundo\\TicketsPro\\Services\\Implementations\\LoggerRepository.cs*",
+              "RelativeToolTip": "..\\Services\\Implementations\\LoggerRepository.cs*",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwCAAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T19:26:25.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoggerBLL.cs",
+              "DocumentMoniker": "C:\\Users\\Juan Segundo\\TicketsPro\\Services\\BLL\\LoggerBLL.cs",
+              "RelativeDocumentMoniker": "..\\Services\\BLL\\LoggerBLL.cs",
+              "ToolTip": "C:\\Users\\Juan Segundo\\TicketsPro\\Services\\BLL\\LoggerBLL.cs",
+              "RelativeToolTip": "..\\Services\\BLL\\LoggerBLL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T19:22:15.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoggerService.cs",
+              "DocumentMoniker": "C:\\Users\\Juan Segundo\\TicketsPro\\Services\\Services\\LoggerService.cs",
+              "RelativeDocumentMoniker": "..\\Services\\Services\\LoggerService.cs",
+              "ToolTip": "C:\\Users\\Juan Segundo\\TicketsPro\\Services\\Services\\LoggerService.cs",
+              "RelativeToolTip": "..\\Services\\Services\\LoggerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T19:20:52.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ILogger.cs",
+              "DocumentMoniker": "C:\\Users\\Juan Segundo\\TicketsPro\\Services\\Dao\\Contracts\\ILogger.cs",
+              "RelativeDocumentMoniker": "..\\Services\\Dao\\Contracts\\ILogger.cs",
+              "ToolTip": "C:\\Users\\Juan Segundo\\TicketsPro\\Services\\Dao\\Contracts\\ILogger.cs",
+              "RelativeToolTip": "..\\Services\\Dao\\Contracts\\ILogger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T17:53:18.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Log.cs",
+              "DocumentMoniker": "C:\\Users\\Juan Segundo\\TicketsPro\\Services\\DomainModel\\Log.cs",
+              "RelativeDocumentMoniker": "..\\Services\\DomainModel\\Log.cs",
+              "ToolTip": "C:\\Users\\Juan Segundo\\TicketsPro\\Services\\DomainModel\\Log.cs",
+              "RelativeToolTip": "..\\Services\\DomainModel\\Log.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T17:51:10.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Juan Segundo\\TicketsPro\\Services\\DomainModel\\Usuario.cs",
+              "RelativeDocumentMoniker": "..\\Services\\DomainModel\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Juan Segundo\\TicketsPro\\Services\\DomainModel\\Usuario.cs",
+              "RelativeToolTip": "..\\Services\\DomainModel\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T00:33:04.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Patente.cs",
+              "DocumentMoniker": "C:\\Users\\Juan Segundo\\TicketsPro\\Services\\DomainModel\\Patente.cs",
+              "RelativeDocumentMoniker": "..\\Services\\DomainModel\\Patente.cs",
+              "ToolTip": "C:\\Users\\Juan Segundo\\TicketsPro\\Services\\DomainModel\\Patente.cs",
+              "RelativeToolTip": "..\\Services\\DomainModel\\Patente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T00:31:55.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Familia.cs",
+              "DocumentMoniker": "C:\\Users\\Juan Segundo\\TicketsPro\\Services\\DomainModel\\Familia.cs",
+              "RelativeDocumentMoniker": "..\\Services\\DomainModel\\Familia.cs",
+              "ToolTip": "C:\\Users\\Juan Segundo\\TicketsPro\\Services\\DomainModel\\Familia.cs",
+              "RelativeToolTip": "..\\Services\\DomainModel\\Familia.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T00:29:10.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IJoinRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Juan Segundo\\TicketsPro\\Services\\Implementations\\IJoinRepository.cs",
+              "RelativeDocumentMoniker": "..\\Services\\Implementations\\IJoinRepository.cs",
+              "ToolTip": "C:\\Users\\Juan Segundo\\TicketsPro\\Services\\Implementations\\IJoinRepository.cs",
+              "RelativeToolTip": "..\\Services\\Implementations\\IJoinRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T23:06:39.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\Juan Segundo\\TicketsPro\\Entity\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\Entity\\Class1.cs",
+              "ToolTip": "C:\\Users\\Juan Segundo\\TicketsPro\\Entity\\Class1.cs",
+              "RelativeToolTip": "..\\Entity\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T22:35:55.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\Juan Segundo\\TicketsPro\\BLL\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\Class1.cs",
+              "ToolTip": "C:\\Users\\Juan Segundo\\TicketsPro\\BLL\\Class1.cs",
+              "RelativeToolTip": "..\\BLL\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T22:35:39.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\Juan Segundo\\TicketsPro\\DAL\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\DAL\\Class1.cs",
+              "ToolTip": "C:\\Users\\Juan Segundo\\TicketsPro\\DAL\\Class1.cs",
+              "RelativeToolTip": "..\\DAL\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T22:35:23.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Juan Segundo\\TicketsPro\\TicketPro\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -31,14 +229,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-26T22:32:03.023Z",
               "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
             }
           ]
         }

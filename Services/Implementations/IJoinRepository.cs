@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Services
+namespace Services.Implementations
 {
-    public class Class1
+    internal interface IJoinRepository
     {
     }
 }

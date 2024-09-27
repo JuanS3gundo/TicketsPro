@@ -1,7 +1,10 @@
-﻿using System;
+﻿using Services;
+using Services.DomainModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +18,13 @@ namespace TicketPro
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Log log = new Log(DateTime.Now, "probando bitacora", TraceLevel.Info);
+            LoggerService.WriteLog(log);
+        
         }
     }
 }
