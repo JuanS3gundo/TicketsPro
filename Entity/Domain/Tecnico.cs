@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    public class Class1
+    public class Tecnico : Empleado
     {
+        public int TicketsResueltos { get; set; }
     }
 }
