@@ -9,5 +9,6 @@ namespace Entity
     public class Tecnico : Empleado
     {
         public int TicketsResueltos { get; set; }
+        public int IdTecnico { get; set; }  
     }
 }

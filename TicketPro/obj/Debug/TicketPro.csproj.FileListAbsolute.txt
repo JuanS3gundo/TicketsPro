@@ -11,3 +11,4 @@ C:\Users\Juan Segundo\TicketsPro\TicketPro\obj\Debug\TicketPro.csproj.CoreCompil
 C:\Users\Juan Segundo\TicketsPro\TicketPro\obj\Debug\TicketPro.csproj.Up2Date
 C:\Users\Juan Segundo\TicketsPro\TicketPro\obj\Debug\TicketPro.exe
 C:\Users\Juan Segundo\TicketsPro\TicketPro\obj\Debug\TicketPro.pdb
+C:\Users\Juan Segundo\TicketsPro\TicketPro\obj\Debug\TicketPro.LogIn.resources

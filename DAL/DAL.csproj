@@ -12,6 +12,8 @@
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <!-- Agregar esta línea para establecer la versión de C# a 8.0 -->
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -41,8 +43,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Contracts\IGenericRepository.cs" />
+    <Compile Include="Contracts\Implementations\SqlServer\Repositories\TicketRepository.cs" />
+    <Compile Include="Contracts\Implementations\SqlServer\UnitOfWork\UnitOfWork.cs" />
+    <Compile Include="Contracts\Repositories\ITicketRepository.cs" />
+    <Compile Include="Contracts\UnitOfWork\IUnitOfWork.cs" />
+    <Compile Include="Contracts\UnitOfWork\IUnitOfWorkAdapter.cs" />
+    <Compile Include="Contracts\UnitOfWork\IUnitOfWorkRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Factory\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{aec99b65-73ac-4a43-b7de-6bc4de325537}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
