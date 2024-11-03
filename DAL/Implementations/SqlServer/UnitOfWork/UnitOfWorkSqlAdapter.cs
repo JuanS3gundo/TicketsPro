@@ -1,5 +1,4 @@
-﻿using DAL.Contracts.Implementations.SqlServer.Repositories;
-using DAL.Contracts.Repositories;
+﻿using DAL.Contracts.UnitOfWork;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -7,38 +6,40 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL.Contracts.Implementations.SqlServer.UnitOfWork
+namespace DAL.Implementations.SqlServer.UnitOfWork
 {
-    public class UnitOfWork : IUnitOfWork
+    public class UnitOfWorkSqlAdapter : IUnitOfWorkAdapter
     {
         private readonly SqlConnection _connection;
-        private readonly SqlTransaction _transaction;
+        private SqlTransaction _transaction;
+        public IUnitOfWorkRepository Repositories { get; private set; }
 
-        // Repositorios específicos inicializados bajo demanda (lazy loading)
-        private TicketRepository _ticketRepository;
-
-
-        public UnitOfWork(string connectionString)
+        public UnitOfWorkSqlAdapter(string connectionString)
         {
             _connection = new SqlConnection(connectionString);
             _connection.Open();
             _transaction = _connection.BeginTransaction();
+
+            Repositories = new UnitOfWorkSqlRepository(_connection, _transaction);
         }
 
-        public ITicketRepository TicketRepository => _ticketRepository ??= new TicketRepository(_connection, _transaction);
-
-
-        public int SaveChanges()
+        public void SaveChanges()
         {
             try
             {
                 _transaction.Commit();
-                return 1; // Indica que los cambios fueron aplicados
             }
             catch
             {
                 _transaction.Rollback();
                 throw;
+            }
+            finally
+            {
+                if (_connection.State == System.Data.ConnectionState.Open)
+                {
+                    _transaction = _connection.BeginTransaction();
+                }
             }
         }
 
@@ -47,7 +48,7 @@ namespace DAL.Contracts.Implementations.SqlServer.UnitOfWork
             _transaction?.Dispose();
             _connection?.Close();
             _connection?.Dispose();
+            Repositories = null;
         }
     }
 }
-

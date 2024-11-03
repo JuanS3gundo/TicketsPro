@@ -1,7 +1,9 @@
 ﻿using DAL.Contracts.Repositories;
+using DAL.Helpers;
 using Entity;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Linq.Expressions;
@@ -10,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Contracts.Implementations.SqlServer.Repositories
 {
-    public class TicketRepository : ITicketRepository
+    public class TicketRepository : IGenericRepository<Ticket>
     {
         private readonly SqlConnection _connection;
         private readonly SqlTransaction _transaction;
@@ -22,22 +24,18 @@ namespace DAL.Contracts.Implementations.SqlServer.Repositories
         }
         public void Add(Ticket entity)
         {
-            using (var command = _connection.CreateCommand())
-            {
-                command.Transaction = _transaction;
-                command.CommandText = @"INSERT INTO Ticket (IdTicket, Titulo, Descripcion, FechaApertura, Categoria, Estado, Ubicacion, TecnicoId) 
-                                        VALUES (@IdTicket, @Titulo, @Descripcion, @FechaApertura, @Categoria, @Estado, @Ubicacion, @TecnicoId)";
-                command.Parameters.AddWithValue("@IdTicket", entity.IdTicket);
-                command.Parameters.AddWithValue("@Titulo", entity.Titulo);
-                command.Parameters.AddWithValue("@Descripcion", entity.Descripcion);
-                command.Parameters.AddWithValue("@FechaApertura", entity.FechaApertura);
-                command.Parameters.AddWithValue("@Categoria", entity.Categoria);
-                command.Parameters.AddWithValue("@Estado", entity.Estado);
-                command.Parameters.AddWithValue("@Ubicacion", entity.Ubicacion);
-                command.Parameters.AddWithValue("@TecnicoId", entity.TecnicoAsignado?.IdTecnico);
+            string commandText = @"INSERT INTO Ticket (IdTicket, Titulo, Descripcion, FechaApertura, Categoria, Estado, Ubicacion, TecnicoId) 
+                           VALUES (@IdTicket, @Titulo, @Descripcion, @FechaApertura, @Categoria, @Estado, @Ubicacion, @TecnicoId)";
 
-                command.ExecuteNonQuery();
-            }
+            SqlHelper.ExecuteNonQuery(commandText, CommandType.Text,
+                new SqlParameter("@IdTicket", entity.IdTicket),
+                new SqlParameter("@Titulo", entity.Titulo ?? (object)DBNull.Value),
+                new SqlParameter("@Descripcion", entity.Descripcion ?? (object)DBNull.Value),
+                new SqlParameter("@FechaApertura", entity.FechaApertura),
+                new SqlParameter("@Categoria", (int)entity.Categoria),
+                new SqlParameter("@Estado", (int)entity.Estado),
+                new SqlParameter("@Ubicacion", (int)entity.Ubicacion),
+                new SqlParameter("@TecnicoId", (object)entity.TecnicoAsignado?.IdTecnico ?? DBNull.Value));
         }
 
         public IEnumerable<Ticket> Find(Expression<Func<Ticket, bool>> predicate)

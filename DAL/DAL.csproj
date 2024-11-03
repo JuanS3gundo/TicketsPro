@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -44,12 +45,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contracts\IGenericRepository.cs" />
-    <Compile Include="Contracts\Implementations\SqlServer\Repositories\TicketRepository.cs" />
-    <Compile Include="Contracts\Implementations\SqlServer\UnitOfWork\UnitOfWork.cs" />
     <Compile Include="Contracts\Repositories\ITicketRepository.cs" />
     <Compile Include="Contracts\UnitOfWork\IUnitOfWork.cs" />
     <Compile Include="Contracts\UnitOfWork\IUnitOfWorkAdapter.cs" />
     <Compile Include="Contracts\UnitOfWork\IUnitOfWorkRepository.cs" />
+    <Compile Include="Implementations\SqlServer\Helpers\SqlHelper.cs" />
+    <Compile Include="Implementations\SqlServer\Repositories\TicketRepository.cs" />
+    <Compile Include="Implementations\SqlServer\UnitOfWork\UnitOfWorkSql.cs" />
+    <Compile Include="Implementations\SqlServer\UnitOfWork\UnitOfWorkSqlAdapter.cs" />
+    <Compile Include="Implementations\SqlServer\UnitOfWork\UnitOfWorkSqlRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -50,7 +50,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(754, 311);
+            this.button1.Location = new System.Drawing.Point(763, 285);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -159,7 +159,7 @@
             this.button4.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 159);
+            this.button4.Location = new System.Drawing.Point(3, 159);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(210, 47);
             this.button4.TabIndex = 5;

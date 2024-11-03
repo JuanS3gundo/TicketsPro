@@ -9,7 +9,7 @@ namespace DAL.Contracts.UnitOfWork
 {
     public interface IUnitOfWorkAdapter : IDisposable       
     {
-        DbConnection Connection { get; } // Propiedad para la conexión a la base de datos
-        int SaveChanges();
+        IUnitOfWorkRepository Repositories { get; }
+        void SaveChanges();
     }
 }
