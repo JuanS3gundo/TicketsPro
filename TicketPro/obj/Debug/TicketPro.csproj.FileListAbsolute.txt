@@ -5,10 +5,10 @@ C:\Users\Juan Segundo\TicketsPro\TicketPro\bin\Debug\Services.dll
 C:\Users\Juan Segundo\TicketsPro\TicketPro\bin\Debug\Services.pdb
 C:\Users\Juan Segundo\TicketsPro\TicketPro\obj\Debug\TicketPro.csproj.AssemblyReference.cache
 C:\Users\Juan Segundo\TicketsPro\TicketPro\obj\Debug\TicketPro.Form1.resources
+C:\Users\Juan Segundo\TicketsPro\TicketPro\obj\Debug\TicketPro.LogIn.resources
 C:\Users\Juan Segundo\TicketsPro\TicketPro\obj\Debug\TicketPro.Properties.Resources.resources
 C:\Users\Juan Segundo\TicketsPro\TicketPro\obj\Debug\TicketPro.csproj.GenerateResource.cache
 C:\Users\Juan Segundo\TicketsPro\TicketPro\obj\Debug\TicketPro.csproj.CoreCompileInputs.cache
 C:\Users\Juan Segundo\TicketsPro\TicketPro\obj\Debug\TicketPro.csproj.Up2Date
 C:\Users\Juan Segundo\TicketsPro\TicketPro\obj\Debug\TicketPro.exe
 C:\Users\Juan Segundo\TicketsPro\TicketPro\obj\Debug\TicketPro.pdb
-C:\Users\Juan Segundo\TicketsPro\TicketPro\obj\Debug\TicketPro.LogIn.resources
