@@ -1,0 +1,5 @@
+03/11/2024 23:15:16 - Error: Error al crear el ticket: El nombre de columna 'TecnicoId' no es válido. - 
+03/11/2024 23:37:37 - Error: Error al crear el ticket: El nombre de columna 'TecnicoId' no es válido. - 
+03/11/2024 23:39:00 - Error: Error al crear el ticket: El nombre de columna 'IdTecnico' no es válido. - 
+03/11/2024 23:41:26 - Error: Error al crear el ticket: Instrucción INSERT en conflicto con la restricción FOREIGN KEY 'FK_Ticket_Tecnico'. El conflicto ha aparecido en la base de datos 'ProyectoTicketsPro', tabla 'dbo.Tecnico', column 'IdTecnico'.
+Se terminó la instrucción. - 

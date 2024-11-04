@@ -24,8 +24,8 @@ namespace DAL.Contracts.Implementations.SqlServer.Repositories
         }
         public void Add(Ticket entity)
         {
-            string commandText = @"INSERT INTO Ticket (IdTicket, Titulo, Descripcion, FechaApertura, Categoria, Estado, Ubicacion, TecnicoId) 
-                           VALUES (@IdTicket, @Titulo, @Descripcion, @FechaApertura, @Categoria, @Estado, @Ubicacion, @TecnicoId)";
+            string commandText = @"INSERT INTO Ticket (IdTicket, Titulo, Descripcion, FechaApertura, Categoria, Estado, Ubicacion, IdTecnico) 
+                           VALUES (@IdTicket, @Titulo, @Descripcion, @FechaApertura, @Categoria, @Estado, @Ubicacion, @IdTecnico)";
 
             SqlHelper.ExecuteNonQuery(commandText, CommandType.Text,
                 new SqlParameter("@IdTicket", entity.IdTicket),
@@ -35,7 +35,7 @@ namespace DAL.Contracts.Implementations.SqlServer.Repositories
                 new SqlParameter("@Categoria", (int)entity.Categoria),
                 new SqlParameter("@Estado", (int)entity.Estado),
                 new SqlParameter("@Ubicacion", (int)entity.Ubicacion),
-                new SqlParameter("@TecnicoId", (object)entity.TecnicoAsignado?.IdTecnico ?? DBNull.Value));
+                new SqlParameter("@IdTecnico", entity.TecnicoAsignado?.IdTecnico ?? (object)DBNull.Value)); // Usa DBNull.Value si el técnico es null
         }
 
         public IEnumerable<Ticket> Find(Expression<Func<Ticket, bool>> predicate)
@@ -65,7 +65,7 @@ namespace DAL.Contracts.Implementations.SqlServer.Repositories
                             Categoria = (Enums.Categoria)reader.GetInt32(reader.GetOrdinal("Categoria")),
                             Estado = (Enums.Estado)reader.GetInt32(reader.GetOrdinal("Estado")),
                             Ubicacion = (Enums.Ubicacion)reader.GetInt32(reader.GetOrdinal("Ubicacion")),
-                            TecnicoAsignado = new Tecnico { IdTecnico = reader.GetInt32(reader.GetOrdinal("TecnicoId")) }
+                            TecnicoAsignado = new Tecnico { IdTecnico = reader.GetInt32(reader.GetOrdinal("IdTecnico")) }
                         });
                     }
                 }
@@ -95,7 +95,7 @@ namespace DAL.Contracts.Implementations.SqlServer.Repositories
                             Categoria = (Enums.Categoria)reader.GetInt32(reader.GetOrdinal("Categoria")),
                             Estado = (Enums.Estado)reader.GetInt32(reader.GetOrdinal("Estado")),
                             Ubicacion = (Enums.Ubicacion)reader.GetInt32(reader.GetOrdinal("Ubicacion")),
-                            TecnicoAsignado = new Tecnico { IdTecnico = reader.GetInt32(reader.GetOrdinal("TecnicoId")) }
+                            TecnicoAsignado = new Tecnico { IdTecnico = reader.GetInt32(reader.GetOrdinal("IdTecnico")) }
                         };
                     }
                 }
@@ -126,7 +126,7 @@ namespace DAL.Contracts.Implementations.SqlServer.Repositories
                             Categoria = (Enums.Categoria)reader.GetInt32(reader.GetOrdinal("Categoria")),
                             Estado = (Enums.Estado)reader.GetInt32(reader.GetOrdinal("Estado")),
                             Ubicacion = (Enums.Ubicacion)reader.GetInt32(reader.GetOrdinal("Ubicacion")),
-                            TecnicoAsignado = new Tecnico { IdTecnico = reader.GetInt32(reader.GetOrdinal("TecnicoId")) }
+                            TecnicoAsignado = new Tecnico { IdTecnico = reader.GetInt32(reader.GetOrdinal("IdTecnico")) }
                         });
                     }
                 }
@@ -158,7 +158,7 @@ namespace DAL.Contracts.Implementations.SqlServer.Repositories
                             Categoria = (Enums.Categoria)reader.GetInt32(reader.GetOrdinal("Categoria")),
                             Estado = (Enums.Estado)reader.GetInt32(reader.GetOrdinal("Estado")),
                             Ubicacion = (Enums.Ubicacion)reader.GetInt32(reader.GetOrdinal("Ubicacion")),
-                            TecnicoAsignado = new Tecnico { IdTecnico = reader.GetInt32(reader.GetOrdinal("TecnicoId")) }
+                            TecnicoAsignado = new Tecnico { IdTecnico = reader.GetInt32(reader.GetOrdinal("IdTecnico")) }
                         });
                     }
                 }
@@ -190,7 +190,7 @@ namespace DAL.Contracts.Implementations.SqlServer.Repositories
                             Categoria = (Enums.Categoria)reader.GetInt32(reader.GetOrdinal("Categoria")),
                             Estado = (Enums.Estado)reader.GetInt32(reader.GetOrdinal("Estado")),
                             Ubicacion = (Enums.Ubicacion)reader.GetInt32(reader.GetOrdinal("Ubicacion")),
-                            TecnicoAsignado = new Tecnico { IdTecnico = reader.GetInt32(reader.GetOrdinal("TecnicoId")) }
+                            TecnicoAsignado = new Tecnico { IdTecnico = reader.GetInt32(reader.GetOrdinal("IdTecnico")) }
                         });
                     }
                 }
@@ -206,8 +206,8 @@ namespace DAL.Contracts.Implementations.SqlServer.Repositories
             using (var command = _connection.CreateCommand())
             {
                 command.Transaction = _transaction;
-                command.CommandText = "SELECT * FROM Ticket WHERE TecnicoId = @TecnicoId";
-                command.Parameters.AddWithValue("@TecnicoId", tecnicoId);
+                command.CommandText = "SELECT * FROM Ticket WHERE IdTecnico = @IdTecnico";
+                command.Parameters.AddWithValue("@IdTecnico", tecnicoId);
 
                 using (var reader = command.ExecuteReader())
                 {
@@ -222,7 +222,7 @@ namespace DAL.Contracts.Implementations.SqlServer.Repositories
                             Categoria = (Enums.Categoria)reader.GetInt32(reader.GetOrdinal("Categoria")),
                             Estado = (Enums.Estado)reader.GetInt32(reader.GetOrdinal("Estado")),
                             Ubicacion = (Enums.Ubicacion)reader.GetInt32(reader.GetOrdinal("Ubicacion")),
-                            TecnicoAsignado = new Tecnico { IdTecnico = reader.GetInt32(reader.GetOrdinal("TecnicoId")) }
+                            TecnicoAsignado = new Tecnico { IdTecnico = reader.GetInt32(reader.GetOrdinal("IdTecnico")) }
                         });
                     }
                 }
@@ -250,7 +250,7 @@ namespace DAL.Contracts.Implementations.SqlServer.Repositories
                 command.Transaction = _transaction;
                 command.CommandText = @"UPDATE Ticket 
                                         SET Titulo = @Titulo, Descripcion = @Descripcion, FechaApertura = @FechaApertura, 
-                                            Categoria = @Categoria, Estado = @Estado, Ubicacion = @Ubicacion, TecnicoId = @TecnicoId 
+                                            Categoria = @Categoria, Estado = @Estado, Ubicacion = @Ubicacion, IdTecnico = @IdTecnico 
                                         WHERE IdTicket = @IdTicket";
                 command.Parameters.AddWithValue("@IdTicket", entity.IdTicket);
                 command.Parameters.AddWithValue("@Titulo", entity.Titulo);
@@ -259,7 +259,7 @@ namespace DAL.Contracts.Implementations.SqlServer.Repositories
                 command.Parameters.AddWithValue("@Categoria", (int)entity.Categoria);
                 command.Parameters.AddWithValue("@Estado", (int)entity.Estado);
                 command.Parameters.AddWithValue("@Ubicacion", (int)entity.Ubicacion);
-                command.Parameters.AddWithValue("@TecnicoId", entity.TecnicoAsignado?.IdTecnico);
+                command.Parameters.AddWithValue("@IdTecnico", entity.TecnicoAsignado?.IdTecnico);
 
                 command.ExecuteNonQuery();
             }

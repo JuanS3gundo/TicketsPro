@@ -1,6 +1,7 @@
 ﻿using Services.Dao;
 using Services.DomainModel;
 using Services.Implementations;
+using Services.Services;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -10,11 +11,11 @@ using System.Threading.Tasks;
 
 namespace Services
 {
-    public static class LoggerService
+    public class LoggerService : ILoggerService
     {
-        public static void WriteLog(Log log, Exception ex = null)
+        public void WriteLog(Log log, Exception ex = null)
         {
-            BLL.LoggerBLL.WriteLog(log, ex);    
+            BLL.LoggerBLL.WriteLog(log, ex);
         }
     }
 }

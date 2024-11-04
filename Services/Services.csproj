@@ -50,6 +50,7 @@
     <Compile Include="DomainModel\Patente.cs" />
     <Compile Include="DomainModel\Usuario.cs" />
     <Compile Include="Implementations\IJoinRepository.cs" />
+    <Compile Include="Services\ILoggerService.cs" />
     <Compile Include="Services\LoggerService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
