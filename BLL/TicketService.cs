@@ -26,7 +26,7 @@ namespace BLL
         public static TicketService Instance => _instance.Value;
 
         // Constructor privado para evitar instanciación externa
-        private TicketService(IUnitOfWork unitOfWork)
+        public TicketService(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
         }
@@ -67,5 +67,12 @@ namespace BLL
             throw new NotImplementedException();
         }
 
+        public List<Ticket> ObtenerTodosLosTickets()
+        {
+            using (var uow = _unitOfWork.Create())
+            {
+                return uow.Repositories.TicketRepository.GetAll().ToList();
+            }
+        }
     }
 }

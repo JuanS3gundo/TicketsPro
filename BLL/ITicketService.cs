@@ -10,6 +10,7 @@ namespace BLL
 {
     public interface ITicketService
     {
+        List<Ticket> ObtenerTodosLosTickets();
         void CrearTicket(Ticket ticket);
         Ticket ObtenerTicketPorId(Guid id);
         IEnumerable<Ticket> ObtenerTicketsPorEstado(Estado estado);
