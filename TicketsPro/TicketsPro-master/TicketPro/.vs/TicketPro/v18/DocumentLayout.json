@@ -1,0 +1,288 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Proyectos\\TicketsPro-master def\\TicketsPro-master\\TicketPro\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C19C82DE-C237-474B-ACFB-C73EBDFC3FC6}|..\\Services\\Services.csproj|c:\\proyectos\\ticketspro-master def\\ticketspro-master\\services\\bll\\loginbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C19C82DE-C237-474B-ACFB-C73EBDFC3FC6}|..\\Services\\Services.csproj|c:\\proyectos\\ticketspro-master def\\ticketspro-master\\services\\bll\\languagebll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C19C82DE-C237-474B-ACFB-C73EBDFC3FC6}|..\\Services\\Services.csproj|c:\\proyectos\\ticketspro-master def\\ticketspro-master\\services\\bll\\familiabll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEC99B65-73AC-4A43-B7DE-6BC4DE325537}|..\\Entity\\Entity.csproj|c:\\proyectos\\ticketspro-master def\\ticketspro-master\\entity\\domain\\equipoinformatico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEC99B65-73AC-4A43-B7DE-6BC4DE325537}|..\\Entity\\Entity.csproj|c:\\proyectos\\ticketspro-master def\\ticketspro-master\\entity\\dtos\\tendenciaticketsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEC99B65-73AC-4A43-B7DE-6BC4DE325537}|..\\Entity\\Entity.csproj|c:\\proyectos\\ticketspro-master def\\ticketspro-master\\entity\\domain\\tipoequipo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEC99B65-73AC-4A43-B7DE-6BC4DE325537}|..\\Entity\\Entity.csproj|c:\\proyectos\\ticketspro-master def\\ticketspro-master\\entity\\domain\\ubicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEC99B65-73AC-4A43-B7DE-6BC4DE325537}|..\\Entity\\Entity.csproj|c:\\proyectos\\ticketspro-master def\\ticketspro-master\\entity\\domain\\ubicacionequipo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1982126D-6132-43D9-ABD0-62165D93601C}|..\\DAL\\DAL.csproj|c:\\proyectos\\ticketspro-master def\\ticketspro-master\\dal\\implementations\\sqlserver\\repositories\\sla\\politicaslarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1982126D-6132-43D9-ABD0-62165D93601C}|..\\DAL\\DAL.csproj|c:\\proyectos\\ticketspro-master def\\ticketspro-master\\dal\\contracts\\repositories\\catalogos\\iestadoticketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1982126D-6132-43D9-ABD0-62165D93601C}|..\\DAL\\DAL.csproj|c:\\proyectos\\ticketspro-master def\\ticketspro-master\\dal\\contracts\\repositories\\catalogos\\icategoriaticketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C39D0BE2-F57B-480B-9710-C3DF82EE1C97}|..\\BLL\\BLL.csproj|c:\\proyectos\\ticketspro-master def\\ticketspro-master\\bll\\implementations\\analiticas\\analiticasservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C39D0BE2-F57B-480B-9710-C3DF82EE1C97}|..\\BLL\\BLL.csproj|c:\\proyectos\\ticketspro-master def\\ticketspro-master\\bll\\business exceptions\\dalexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C39D0BE2-F57B-480B-9710-C3DF82EE1C97}|..\\BLL\\BLL.csproj|c:\\proyectos\\ticketspro-master def\\ticketspro-master\\bll\\business exceptions\\bllexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C39D0BE2-F57B-480B-9710-C3DF82EE1C97}|..\\BLL\\BLL.csproj|c:\\proyectos\\ticketspro-master def\\ticketspro-master\\bll\\business exceptions\\sla\\slaresolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginBLL.cs",
+              "DocumentMoniker": "C:\\Proyectos\\TicketsPro-master def\\TicketsPro-master\\Services\\BLL\\LoginBLL.cs",
+              "RelativeDocumentMoniker": "..\\Services\\BLL\\LoginBLL.cs",
+              "ToolTip": "C:\\Proyectos\\TicketsPro-master def\\TicketsPro-master\\Services\\BLL\\LoginBLL.cs",
+              "RelativeToolTip": "..\\Services\\BLL\\LoginBLL.cs",
+              "ViewState": "AgIAAAwAAAA4MzMzM/M2wCoAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T22:52:02.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LanguageBLL.cs",
+              "DocumentMoniker": "C:\\Proyectos\\TicketsPro-master def\\TicketsPro-master\\Services\\BLL\\LanguageBLL.cs",
+              "RelativeDocumentMoniker": "..\\Services\\BLL\\LanguageBLL.cs",
+              "ToolTip": "C:\\Proyectos\\TicketsPro-master def\\TicketsPro-master\\Services\\BLL\\LanguageBLL.cs",
+              "RelativeToolTip": "..\\Services\\BLL\\LanguageBLL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T22:52:01.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FamiliaBLL.cs",
+              "DocumentMoniker": "C:\\Proyectos\\TicketsPro-master def\\TicketsPro-master\\Services\\BLL\\FamiliaBLL.cs",
+              "RelativeDocumentMoniker": "..\\Services\\BLL\\FamiliaBLL.cs",
+              "ToolTip": "C:\\Proyectos\\TicketsPro-master def\\TicketsPro-master\\Services\\BLL\\FamiliaBLL.cs",
+              "RelativeToolTip": "..\\Services\\BLL\\FamiliaBLL.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T22:51:54.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EquipoInformatico.cs",
+              "DocumentMoniker": "C:\\Proyectos\\TicketsPro-master def\\TicketsPro-master\\Entity\\Domain\\EquipoInformatico.cs",
+              "RelativeDocumentMoniker": "..\\Entity\\Domain\\EquipoInformatico.cs",
+              "ToolTip": "C:\\Proyectos\\TicketsPro-master def\\TicketsPro-master\\Entity\\Domain\\EquipoInformatico.cs",
+              "RelativeToolTip": "..\\Entity\\Domain\\EquipoInformatico.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T22:51:46.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TendenciaTicketsDTO.cs",
+              "DocumentMoniker": "C:\\Proyectos\\TicketsPro-master def\\TicketsPro-master\\Entity\\DTOs\\TendenciaTicketsDTO.cs",
+              "RelativeDocumentMoniker": "..\\Entity\\DTOs\\TendenciaTicketsDTO.cs",
+              "ToolTip": "C:\\Proyectos\\TicketsPro-master def\\TicketsPro-master\\Entity\\DTOs\\TendenciaTicketsDTO.cs",
+              "RelativeToolTip": "..\\Entity\\DTOs\\TendenciaTicketsDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T22:51:41.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TipoEquipo.cs",
+              "DocumentMoniker": "C:\\Proyectos\\TicketsPro-master def\\TicketsPro-master\\Entity\\Domain\\TipoEquipo.cs",
+              "RelativeDocumentMoniker": "..\\Entity\\Domain\\TipoEquipo.cs",
+              "ToolTip": "C:\\Proyectos\\TicketsPro-master def\\TicketsPro-master\\Entity\\Domain\\TipoEquipo.cs",
+              "RelativeToolTip": "..\\Entity\\Domain\\TipoEquipo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T22:51:36.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Ubicacion.cs",
+              "DocumentMoniker": "C:\\Proyectos\\TicketsPro-master def\\TicketsPro-master\\Entity\\Domain\\Ubicacion.cs",
+              "RelativeDocumentMoniker": "..\\Entity\\Domain\\Ubicacion.cs",
+              "ToolTip": "C:\\Proyectos\\TicketsPro-master def\\TicketsPro-master\\Entity\\Domain\\Ubicacion.cs",
+              "RelativeToolTip": "..\\Entity\\Domain\\Ubicacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T22:51:35.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UbicacionEquipo.cs",
+              "DocumentMoniker": "C:\\Proyectos\\TicketsPro-master def\\TicketsPro-master\\Entity\\Domain\\UbicacionEquipo.cs",
+              "RelativeDocumentMoniker": "..\\Entity\\Domain\\UbicacionEquipo.cs",
+              "ToolTip": "C:\\Proyectos\\TicketsPro-master def\\TicketsPro-master\\Entity\\Domain\\UbicacionEquipo.cs",
+              "RelativeToolTip": "..\\Entity\\Domain\\UbicacionEquipo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T22:51:33.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PoliticaSLARepository.cs",
+              "DocumentMoniker": "C:\\Proyectos\\TicketsPro-master def\\TicketsPro-master\\DAL\\Implementations\\SqlServer\\Repositories\\SLA\\PoliticaSLARepository.cs",
+              "RelativeDocumentMoniker": "..\\DAL\\Implementations\\SqlServer\\Repositories\\SLA\\PoliticaSLARepository.cs",
+              "ToolTip": "C:\\Proyectos\\TicketsPro-master def\\TicketsPro-master\\DAL\\Implementations\\SqlServer\\Repositories\\SLA\\PoliticaSLARepository.cs",
+              "RelativeToolTip": "..\\DAL\\Implementations\\SqlServer\\Repositories\\SLA\\PoliticaSLARepository.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T22:50:57.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IEstadoTicketRepository.cs",
+              "DocumentMoniker": "C:\\Proyectos\\TicketsPro-master def\\TicketsPro-master\\DAL\\Contracts\\Repositories\\Catalogos\\IEstadoTicketRepository.cs",
+              "RelativeDocumentMoniker": "..\\DAL\\Contracts\\Repositories\\Catalogos\\IEstadoTicketRepository.cs",
+              "ToolTip": "C:\\Proyectos\\TicketsPro-master def\\TicketsPro-master\\DAL\\Contracts\\Repositories\\Catalogos\\IEstadoTicketRepository.cs",
+              "RelativeToolTip": "..\\DAL\\Contracts\\Repositories\\Catalogos\\IEstadoTicketRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T22:50:46.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ICategoriaTicketRepository.cs",
+              "DocumentMoniker": "C:\\Proyectos\\TicketsPro-master def\\TicketsPro-master\\DAL\\Contracts\\Repositories\\Catalogos\\ICategoriaTicketRepository.cs",
+              "RelativeDocumentMoniker": "..\\DAL\\Contracts\\Repositories\\Catalogos\\ICategoriaTicketRepository.cs",
+              "ToolTip": "C:\\Proyectos\\TicketsPro-master def\\TicketsPro-master\\DAL\\Contracts\\Repositories\\Catalogos\\ICategoriaTicketRepository.cs",
+              "RelativeToolTip": "..\\DAL\\Contracts\\Repositories\\Catalogos\\ICategoriaTicketRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T22:50:44.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AnaliticasService.cs",
+              "DocumentMoniker": "C:\\Proyectos\\TicketsPro-master def\\TicketsPro-master\\BLL\\Implementations\\Analiticas\\AnaliticasService.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\Implementations\\Analiticas\\AnaliticasService.cs",
+              "ToolTip": "C:\\Proyectos\\TicketsPro-master def\\TicketsPro-master\\BLL\\Implementations\\Analiticas\\AnaliticasService.cs",
+              "RelativeToolTip": "..\\BLL\\Implementations\\Analiticas\\AnaliticasService.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T22:50:25.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DALException.cs",
+              "DocumentMoniker": "C:\\Proyectos\\TicketsPro-master def\\TicketsPro-master\\BLL\\Business Exceptions\\DALException.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\Business Exceptions\\DALException.cs",
+              "ToolTip": "C:\\Proyectos\\TicketsPro-master def\\TicketsPro-master\\BLL\\Business Exceptions\\DALException.cs",
+              "RelativeToolTip": "..\\BLL\\Business Exceptions\\DALException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T22:50:02.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BLLException.cs",
+              "DocumentMoniker": "C:\\Proyectos\\TicketsPro-master def\\TicketsPro-master\\BLL\\Business Exceptions\\BLLException.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\Business Exceptions\\BLLException.cs",
+              "ToolTip": "C:\\Proyectos\\TicketsPro-master def\\TicketsPro-master\\BLL\\Business Exceptions\\BLLException.cs",
+              "RelativeToolTip": "..\\BLL\\Business Exceptions\\BLLException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T22:50:00.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SLAResolver.cs",
+              "DocumentMoniker": "C:\\Proyectos\\TicketsPro-master def\\TicketsPro-master\\BLL\\Business Exceptions\\SLA\\SLAResolver.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\Business Exceptions\\SLA\\SLAResolver.cs",
+              "ToolTip": "C:\\Proyectos\\TicketsPro-master def\\TicketsPro-master\\BLL\\Business Exceptions\\SLA\\SLAResolver.cs",
+              "RelativeToolTip": "..\\BLL\\Business Exceptions\\SLA\\SLAResolver.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T22:49:53.467Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

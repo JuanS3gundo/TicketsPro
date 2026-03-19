@@ -1,0 +1,6 @@
+C:\Proyectos\TicketsPro-master def\TicketsPro-master\Entity\bin\Debug\Entity.dll
+C:\Proyectos\TicketsPro-master def\TicketsPro-master\Entity\bin\Debug\Entity.pdb
+C:\Proyectos\TicketsPro-master def\TicketsPro-master\Entity\obj\Debug\Entity.csproj.AssemblyReference.cache
+C:\Proyectos\TicketsPro-master def\TicketsPro-master\Entity\obj\Debug\Entity.csproj.CoreCompileInputs.cache
+C:\Proyectos\TicketsPro-master def\TicketsPro-master\Entity\obj\Debug\Entity.dll
+C:\Proyectos\TicketsPro-master def\TicketsPro-master\Entity\obj\Debug\Entity.pdb

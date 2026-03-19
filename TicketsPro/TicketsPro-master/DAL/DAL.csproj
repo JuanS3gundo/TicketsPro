@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1982126D-6132-43D9-ABD0-62165D93601C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DAL</RootNamespace>
+    <AssemblyName>DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <!-- Agregar esta línea para establecer la versión de C# a 8.0 -->
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Contracts\IGenericRepository.cs" />
+    <!-- Contracts\Repositories\Ticket -->
+    <Compile Include="Contracts\Repositories\Ticket\ITicketRepository.cs" />
+    <Compile Include="Contracts\Repositories\Ticket\IComentarioTicketRepository.cs" />
+    <Compile Include="Contracts\Repositories\Ticket\ISolucionTicketRepository.cs" />
+    <Compile Include="Contracts\Repositories\Ticket\IAdjuntoTicketRepository.cs" />
+    <!-- Contracts\Repositories\Catalogos -->
+    <Compile Include="Contracts\Repositories\Catalogos\ICategoriaTicketRepository.cs" />
+    <Compile Include="Contracts\Repositories\Catalogos\IEstadoTicketRepository.cs" />
+    <Compile Include="Contracts\Repositories\Catalogos\IPrioridadTicketRepository.cs" />
+    <Compile Include="Contracts\Repositories\Catalogos\ITipoEquipoRepository.cs" />
+    <Compile Include="Contracts\Repositories\Catalogos\IUbicacionRepository.cs" />
+    <Compile Include="Contracts\Repositories\Catalogos\IUbicacionEquipoRepository.cs" />
+    <!-- Contracts\Repositories\Inventario -->
+    <Compile Include="Contracts\Repositories\Inventario\IInventarioItemRepository.cs" />
+    <Compile Include="Contracts\Repositories\Inventario\ICategoriaItemRepository.cs" />
+    <!-- Contracts\Repositories\Equipo -->
+    <Compile Include="Contracts\Repositories\Equipo\IEquipoInformaticoRepository.cs" />
+    <!-- Contracts\Repositories\SLA -->
+    <Compile Include="Contracts\Repositories\SLA\IPoliticaSLARepository.cs" />
+    <!-- Contracts\Repositories\Usuarios -->
+    <Compile Include="Contracts\Repositories\Usuarios\IUsuarioRepository.cs" />
+    <Compile Include="Contracts\UnitOfWork\IUnitOfWork.cs" />
+    <Compile Include="Contracts\UnitOfWork\IUnitOfWorkAdapter.cs" />
+    <Compile Include="Contracts\UnitOfWork\IUnitOfWorkRepository.cs" />
+    <Compile Include="Contracts\UnitOfWork\UnitOfWorkFactory.cs" />
+    <Compile Include="Implementations\SqlServer\Helpers\SqlHelper.cs" />
+    <Compile Include="Implementations\SqlServer\Repositories\BaseRepository.cs" />
+    <!-- Implementations\SqlServer\Repositories\Ticket -->
+    <Compile Include="Implementations\SqlServer\Repositories\Ticket\TicketRepository.cs" />
+    <Compile Include="Implementations\SqlServer\Repositories\Ticket\ComentarioTicketRepository.cs" />
+    <Compile Include="Implementations\SqlServer\Repositories\Ticket\SolucionTicketRepository.cs" />
+    <Compile Include="Implementations\SqlServer\Repositories\Ticket\AdjuntoTicketRepository.cs" />
+    <!-- Implementations\SqlServer\Repositories\Catalogos -->
+    <Compile Include="Implementations\SqlServer\Repositories\Catalogos\CategoriaTicketRepository.cs" />
+    <Compile Include="Implementations\SqlServer\Repositories\Catalogos\EstadoTicketRepository.cs" />
+    <Compile Include="Implementations\SqlServer\Repositories\Catalogos\PrioridadTicketRepository.cs" />
+    <Compile Include="Implementations\SqlServer\Repositories\Catalogos\TipoEquipoRepository.cs" />
+    <Compile Include="Implementations\SqlServer\Repositories\Catalogos\UbicacionRepository.cs" />
+    <Compile Include="Implementations\SqlServer\Repositories\Catalogos\UbicacionEquipoRepository.cs" />
+    <!-- Implementations\SqlServer\Repositories\Inventario -->
+    <Compile Include="Implementations\SqlServer\Repositories\Inventario\InventarioItemRepository.cs" />
+    <Compile Include="Implementations\SqlServer\Repositories\Inventario\CategoriaItemRepository.cs" />
+    <!-- Implementations\SqlServer\Repositories\Equipo -->
+    <Compile Include="Implementations\SqlServer\Repositories\Equipo\EquipoInformaticoRepository.cs" />
+    <!-- Implementations\SqlServer\Repositories\SLA -->
+    <Compile Include="Implementations\SqlServer\Repositories\SLA\PoliticaSLARepository.cs" />
+    <!-- Implementations\SqlServer\Repositories\Usuarios -->
+    <Compile Include="Implementations\SqlServer\Repositories\Usuarios\UsuarioRepository.cs" />
+    <Compile Include="Implementations\SqlServer\UnitOfWork\UnitOfWorkSql.cs" />
+    <Compile Include="Implementations\SqlServer\UnitOfWork\UnitOfWorkSqlAdapter.cs" />
+    <Compile Include="Implementations\SqlServer\UnitOfWork\UnitOfWorkSqlRepository.cs" />
+    <!-- Auto-generated AssemblyAttributes removed to avoid CS0579 in Release -->
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Implementations\SqlServer\Repositories\UserSyncRepositoryAdapter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".vs\DAL.csproj.dtbcache.json" />
+    <None Include=".vs\DAL\CopilotIndices\0.2.1657.32929\CodeChunks.db" />
+    <None Include=".vs\DAL\CopilotIndices\0.2.1657.32929\SemanticSymbols.db" />
+    <None Include=".vs\DAL\CopilotIndices\0.2.1657.32929\SemanticSymbols.db-shm" />
+    <None Include=".vs\DAL\CopilotIndices\0.2.1657.32929\SemanticSymbols.db-wal" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{aec99b65-73ac-4a43-b7de-6bc4de325537}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Services\Services.csproj">
+      <Project>{c19c82de-c237-474b-acfb-c73ebdfc3fc6}</Project>
+      <Name>Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\DAL.dll" />
+    <Content Include="bin\Debug\DAL.pdb" />
+    <Content Include="bin\Debug\Entity.dll" />
+    <Content Include="bin\Debug\Entity.pdb" />
+    <Content Include="bin\Release\DAL.dll" />
+    <Content Include="bin\Release\DAL.pdb" />
+    <Content Include="bin\Release\Entity.dll" />
+    <Content Include="bin\Release\Entity.pdb" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

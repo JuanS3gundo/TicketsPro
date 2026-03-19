@@ -1,0 +1,975 @@
+﻿# ========================================
+# Archivo de Idioma - Espanol (es-ES)
+# TicketPro ITSM Lite
+# ========================================
+
+# --- GENERAL ---
+TicketsPro=TicketsPro
+Error=Error
+Exito=Exito
+Advertencia=Advertencia
+Validacion=Validacion
+Info=Informacion
+Confirmar=Confirmar
+Confirmar_Eliminacion=Confirmar eliminacion
+Aceptar=Aceptar
+Cancelar=Cancelar
+Guardar=Guardar
+Eliminar=Eliminar
+Editar=Editar
+Nuevo=Nuevo
+Cerrar=Cerrar
+Si=Si
+No=No
+Registros=Registros
+Desconocido=Desconocido
+No_asignado=No asignado
+Sin_Resolver=Sin Resolver
+
+# --- MENSAJES COMUNES ---
+Error_al_cargar_datos=Error al cargar los datos
+Error_Cargar_Combos=Error al cargar los combos
+Error_Cargar_Detalle=Error al cargar el detalle
+Error_Crear_Ticket=Error al crear el ticket
+Error_Editar_Ticket=Error al editar el ticket
+Error_Verificar_Permisos=Error al verificar permisos
+Acceso_Denegado=Acceso Denegado
+
+# --- TICKETS ---
+Ticket_Label=Ticket
+Ticket_Cliente_Crear_Titulo=Crear Nuevo Ticket
+Ticket_Cliente_Crear_LabelTitulo=Titulo del Ticket *
+Ticket_Cliente_Crear_LabelDescripcion=Descripcion del Problema
+Ticket_Cliente_Crear_LabelCategoria=Categoria *
+Ticket_Cliente_Crear_LabelUbicacion=Ubicacion *
+Ticket_Cliente_Crear_LabelEquipo=Equipo (Opcional)
+Ticket_Cliente_Crear_SeccionAdjuntos=Archivos Adjuntos
+Ticket_Cliente_Crear_ColNombre=Nombre del Archivo
+Ticket_Cliente_Crear_ColTamanio=tamano
+Ticket_Cliente_Crear_BotonAgregarAdjunto=+ Agregar
+Ticket_Cliente_Crear_BotonEliminarAdjunto=Eliminar
+Ticket_Cliente_Crear_InfoAdjuntos=Max 10 MB por archivo. Permitidos: PDF, Word, Excel, imagenes, ZIP
+Ticket_Cliente_Crear_BotonCrear=Crear Ticket
+Ticket_Cliente_Crear_BotonCancelar=Cancelar
+Ticket_Error_Titulo_Vacio=El Titulo del ticket no puede estar vacio
+Ticket_Error_Descripcion_Vacia=La Descripcion del ticket no puede estar vacia
+Ticket_Cliente_Error_Sesion=No se pudo obtener la Sesion del usuario
+Resolver=Resolver
+
+# Ticket - Validaciones BLL
+Ticket_Error_TicketNulo=El ticket no puede ser nulo
+Ticket_Error_TituloObligatorio=El título del ticket es obligatorio
+Ticket_Error_DescripcionObligatoria=La descripción del ticket es obligatoria
+Ticket_Error_CreadorObligatorio=El creador del ticket es obligatorio
+Ticket_Error_NoPrioridades=No hay prioridades configuradas. Cree al menos una prioridad en Gestión de Maestros antes de crear tickets
+Ticket_Error_NoEstados=No hay estados configurados. Cree al menos un estado en Gestión de Maestros antes de crear tickets
+Ticket_Error_NoExiste=El ticket no existe
+Ticket_Error_TecnicoNoExiste=El técnico no existe
+Ticket_Error_EstadoNoExiste=El estado no existe
+Ticket_Error_EstadoDestinoVacio=El estado destino no puede estar vacío
+Ticket_Error_TicketNoEncontrado=El ticket no fue encontrado
+Ticket_Error_TicketNoEncontradoConId=No se encontro el ticket con ID {0}
+Ticket_Error_TextoBusquedaLargo=El texto de busqueda no puede superar los 200 caracteres
+
+# Ticket - Actualizacion
+Ticket_Update_TicketNulo=El ticket no puede ser nulo.
+Ticket_Update_TicketNoExiste=El ticket no existe.
+Ticket_Update_ActualizadoOk=El ticket {0} fue actualizado correctamente.
+Ticket_Update_PrioridadDesconocida=Desconocida
+Ticket_Update_EstadoDefaultNuevo=Nuevo
+
+# Ticket - Transiciones de Estado
+Ticket_Transicion_EstadoTerminalCerrado=Estado terminal. No se puede modificar un ticket cerrado.
+Ticket_Transicion_EstadoTerminalCancelado=Estado terminal. Cree un nuevo ticket si necesita trabajar en este problema.
+Ticket_Transicion_NuevoAEnProgreso=Debe pasar primero a 'Abierto'.
+Ticket_Transicion_NuevoAResuelto=No se puede resolver sin haberlo trabajado. Pase a 'Abierto' primero.
+Ticket_Transicion_NuevoACerrado=No se puede cerrar sin haberlo trabajado. Flujo: Abierto → Resuelto → Cerrado.
+Ticket_Transicion_AbiertoANuevo=No se puede retroceder a 'Nuevo'.
+Ticket_Transicion_AbiertoACerrado=Debe resolverse antes de cerrar.
+Ticket_Transicion_EnProgresoANuevo=No se puede retroceder a 'Nuevo'.
+Ticket_Transicion_EnProgresoAAbierto=No se puede retroceder a 'Abierto'.
+Ticket_Transicion_EnProgresoACerrado=Debe marcarse como 'Resuelto' antes de cerrar.
+Ticket_Transicion_ResueltoANuevo=No se puede retroceder a 'Nuevo'. Si la solucion fallo, cambielo a 'En Progreso'.
+Ticket_Transicion_ResueltoAAbierto=Si la solucion fallo, cambielo a 'En Progreso'.
+Ticket_Transicion_ResueltoACancelado=No se puede cancelar un ticket resuelto. Cierrelo o reabralo a 'En Progreso'.
+Ticket_Transicion_NoPermitida=Transicion de '{0}' a '{1}' no permitida.
+Ticket_Transicion_MensajeException=Transicion de estado invalida de '{0}' a '{1}': {2}
+
+# Ticket - Excepciones de Negocio
+Ticket_Exception_PrioridadSinSLA=La prioridad '{0}' no tiene una Politica SLA configurada. No se pueden crear o actualizar tickets sin tiempos de respuesta definidos. Configure una Politica SLA para esta prioridad en Administracion -> Gestion de SLAs.
+
+# Ticket - Soluciones
+Ticket_Solucion_DescripcionVacia=La descripcion de la solucion no puede estar vacia
+Ticket_Solucion_TecnicoNoEnSesion=No se encontro un tecnico en la sesion activa
+Ticket_Solucion_TecnicoNoExiste=El tecnico de la sesion no existe en el sistema de tickets
+
+# --- PLACEHOLDERS ---
+Placeholder_Titulo=Ingrese el Titulo del ticket
+Placeholder_Descripcion=Describa el problema o solicitud
+
+# --- COMBOS ---
+Combo_Seleccione_Tecnico=Seleccione un Tecnico
+Combo_Seleccione_Equipo=Seleccione un Equipo
+Combo_Seleccione_Categoria=Seleccione una Categoria
+Combo_Seleccione_Ubicacion=Seleccione una Ubicacion
+Combo_Seleccione_Prioridad=Seleccione una Prioridad
+
+# --- ESTADOS ---
+Estado=Estado
+Estado_SLA=Estado SLA
+Estado_Nuevo=Nuevo
+Estado_Asignado=Asignado
+Estado_EnProceso=En Proceso
+Estado_Resuelto=Resuelto
+Estado_Cerrado=Cerrado
+
+# --- CATEGORIAS ---
+Categoria=Categoria
+Seleccione_una_categoria_valida=Seleccione una Categoria valida
+
+# --- UBICACIONES ---
+Ubicacion=Ubicacion
+Seleccione_una_ubicacion_valida=Seleccione una Ubicacion valida
+
+# --- PRIORIDADES ---
+Prioridad=Prioridad
+Seleccione_una_prioridad_valida=Seleccione una prioridad valida
+
+# --- SLA ---
+Gestion_SLA=Gestion de SLA
+Sin_Politica_SLA=Sin Politica SLA
+Tiempo_Resolucion=Tiempo de Resolucion
+Horas_Laborales=Horas Laborales
+Horas_Corridas=Horas Corridas
+Vencido=Vencido
+Por_Vencer=Por Vencer
+Vence=Vence
+SLA_Nombre_Obligatorio=El nombre de la politica SLA es obligatorio
+SLA_Prioridad_Obligatoria=La prioridad asociada es obligatoria
+SLA_Horas_Mayores_Cero=Las horas deben ser mayores a cero
+SLA_HorasAtencion_Menor_HorasResolucion=Las horas de atencion deben ser menores a las horas de Resolucion
+SLA_Confirmar_Eliminar=esta seguro de eliminar la politica SLA '{0}'?
+Politicas_SLA=politicas SLA
+
+# --- FORM GESTION SLA ---
+SLA_Form_Titulo=Gestion Avanzada de SLA
+SLA_Label_Cantidad=politicas SLA
+SLA_Checkbox_HorasLaborales=Solo contar horas laborales (Lun-Vie 8AM-6PM)
+SLA_Label_HorasResolucion=Tiempo Resolucion (horas):
+SLA_Label_HorasAtencion=Tiempo Primera Respuesta (horas):
+SLA_Label_Prioridad=Prioridad Asociada:
+SLA_Label_Nombre=Nombre de Politica:
+
+# --- VALIDACIONES ---
+Validacion_Titulo_Obligatorio=El Titulo es obligatorio
+Validacion_Descripcion_Obligatoria=La Descripcion es obligatoria
+Validacion_Estado_Obligatorio=El estado es obligatorio
+Validacion_Categoria_Obligatoria=La Categoria es obligatoria
+Validacion_Ubicacion_Obligatoria=La Ubicacion es obligatoria
+Validacion_Prioridad_Obligatoria=La prioridad es obligatoria
+
+# --- LABELS DE FORMULARIOS ---
+Label_Titulo=Titulo
+Label_Descripcion=Descripcion
+Label_Estado=Estado
+Label_Categoria=Categoria
+Label_Ubicacion=Ubicacion
+Label_Tecnico=Tecnico
+Label_FechaApertura=Fecha de Apertura
+
+# --- BOTONES DE FORMULARIOS ---
+Boton_Guardar=Guardar
+Boton_Cancelar=Cancelar
+Boton_Cerrar=Cerrar
+
+# --- MENSAJES DE TICKET ---
+Msg_Ticket_NoEncontrado=Ticket no encontrado
+Msg_Ticket_Editado_OK=Ticket editado correctamente
+DetalleTicket=Detalle del Ticket
+EditarTicket_TituloForm=Editar Ticket
+EditarTicket_TituloUI=Editar Ticket
+
+# --- CLIENTE ---
+Cliente_Label=Cliente
+Cliente_Error_NoFamilia=El usuario no tiene familia asignada
+Cliente_Error_PermisoCrear=No tiene permiso para crear tickets
+Cliente_Boton_VerDetalle=Ver Detalle
+Cliente_Vacio_Msg=No tienes tickets registrados
+Error_Cargar_Tickets=Error al cargar los tickets
+
+# --- TECNICO ---
+Tecnico_Asignado=Tecnico Asignado
+
+# --- DETALLES ---
+Titulo_Detalles_Ticket=Detalles del Ticket
+ID=ID
+Apertura=Fecha de Apertura
+Resolucion=Fecha de Resolucion
+Resuelto_Por=Resuelto Por
+Msg_Solucionado=Solucionado
+Msg_Pendiente=Pendiente
+Equipo_ID=Equipo ID
+Msg_Advertencia_Integridad_Detalle=ADVERTENCIA: El hash de integridad no coincide
+
+# --- SOLUCION TICKET ---
+Error_Abrir_Form_Solucion=Error al abrir el formulario de solucion
+Error_Abrir_Form_Editar=Error al abrir el formulario de editar
+TicketSolucion_Titulo=Resolver Ticket
+TicketSolucion_Subtitulo=Describe la solucion implementada para resolver este ticket.
+TicketSolucion_Detalle=Descripcion de la solucion
+TicketSolucion_Guardar=Guardar y resolver ticket
+TicketSolucion_Cerrar=Cancelar
+TicketSolucion_Msg_Vacio=La solucion no puede estar vacia
+TicketSolucion_Msg_Exito=solucion guardada correctamente
+TicketSolucion_Msg_Error=Error al guardar la solucion
+
+# --- COMENTARIOS ---
+Comentario_Interno=Comentario Interno (solo visible para Tecnicos)
+Comentario_Vacio=El comentario no puede estar vacio
+Enviar_Comentario=Enviar
+
+# Comentario - BLL
+Comentario_Exito_Agregado=Comentario agregado correctamente
+Comentario_Error_Agregar=Error al agregar el comentario
+Comentario_Error_NoExiste=El comentario no existe
+Comentario_Exito_Actualizado=Comentario actualizado correctamente
+Comentario_Error_Actualizar=Error al actualizar el comentario
+Comentario_Exito_Eliminado=Comentario eliminado correctamente
+Comentario_Error_Eliminar=Error al eliminar el comentario
+Comentario_Error_ContenidoVacio=El contenido del comentario no puede estar vacio
+Comentario_Error_TicketInvalido=El ticket especificado no es válido
+Comentario_Error_TicketNoExiste=El ticket especificado no existe
+
+# --- INVENTARIO ---
+Inventario=Inventario
+Inventario_Gestion_FiltroEquipo_ID=ID
+Inventario_Gestion_FiltroEquipo_Modelo=Modelo
+Inventario_Gestion_FiltroEquipo_NroInventario=Nro. Inventario
+Inventario_Gestion_FiltroEquipo_Tipo=Tipo
+Inventario_Gestion_FiltroEquipo_Ubicacion=Ubicacion
+Inventario_Gestion_FiltroItem_Codigo=Codigo
+Inventario_Gestion_FiltroItem_Nombre=Nombre
+Inventario_Gestion_FiltroItem_Categoria=Categoria
+Inventario_Gestion_FiltroItem_Asignacion=Asignacion
+Sin_Procesador=Sin Procesador
+Inventario_Gestion_Equipo_Procesador=Procesador
+Inventario_Gestion_Equipo_RAM=RAM
+Inventario_Gestion_Equipo_ROM=ROM
+Inventario_Gestion_Equipo_Tipo=Tipo
+Inventario_Gestion_Equipo_BotonVerComponentes=Ver Componentes
+Inventario_Gestion_Equipo_BotonVerDetalles=Ver Detalles
+Inventario_Gestion_Equipo_BotonVerHistorial=Ver Historial
+Inventario_Gestion_Equipo_BotonEliminar=Eliminar
+Inventario_Gestion_Equipo_MsgNoComponentes=Este equipo no tiene componentes asignados
+Inventario_Gestion_Equipo_TituloComponentes=Componentes
+Inventario_Gestion_Equipo_ConfirmarEliminar=esta seguro de eliminar este equipo?
+Inventario_Gestion_Equipo_Usuario=Usuario
+Inventario_Gestion_Equipo_Usuario_Sin=Sin usuario asignado
+Inventario_Gestion_Exportar_MsgExito=Datos exportados exitosamente
+Inventario_Gestion_Exportar_MsgError=Error al exportar los datos
+Inventario_Gestion_Exportar_MsgNoDatos=No hay datos para exportar
+Inventario_Gestion_Exportar_TituloDialogo=Exportar Inventario
+Inventario_Gestion_Item_Valor=Valor
+Inventario_Gestion_Item_Ubicacion=Ubicacion
+Inventario_Gestion_Item_Asignacion_Asignado=Asignado a
+Inventario_Gestion_Item_Asignacion_SinAsignar=Sin Asignar
+Inventario_Gestion_Item_BotonEliminar=Eliminar
+Inventario_Gestion_Item_ConfirmarEliminar=esta seguro de eliminar este item?
+Inventario_Gestion_Error_CargarDatos=Error al cargar datos de inventario: {0}
+Inventario_Gestion_Error_EliminarEquipo=Error al eliminar el equipo: {0}
+Inventario_Gestion_Error_EliminarItem=Error al eliminar el item: {0}
+Inventario_Gestion_Error_ExportarInventario=Error al exportar inventario: {0}
+Componentes_De=Componentes de
+Asignacion_Filtro_Sin=Sin
+Asignacion_Filtro_Libre=Libre
+Asignacion_Filtro_No=No
+
+# --- ITEMS ---
+Inventario_NuevoItem_Form_Titulo=Nuevo Ãtem de Inventario
+Item_Categoria_Procesador=Procesador
+Item_Categoria_RAM=RAM
+Item_Categoria_ROM=ROM
+Item_Categoria_Monitor=Monitor
+Item_Categoria_Teclado=Teclado
+Item_Categoria_Mouse=Mouse
+Item_Categoria_Fuente=Fuente de Poder
+Item_Categoria_Otro=Otro
+Inventario_NuevoItem_Error_CamposObligatorios=Todos los campos son obligatorios
+Inventario_NuevoItem_Error_CategoriaNoEncontrada=No se encontro la Categoria seleccionada
+
+# --- EQUIPOS ---
+Inventario_NuevoEquipo_Error_CamposObligatorios=Todos los campos obligatorios deben estar completos
+Inventario_NuevoEquipo_Msg_Exito=Equipo guardado correctamente
+Boton_Eliminar_Dinamico=Eliminar
+Inventario_DetalleEquipo_Msg_EquipoNoEncontrado=Equipo no encontrado
+Inventario_DetalleEquipo_LabelAsignados=Componentes Asignados
+Inventario_DetalleEquipo_LabelDisponibles=Componentes Disponibles
+Inventario_DetalleEquipo_Msg_ExitoActualizar=Equipo actualizado correctamente
+
+# Equipo - Validaciones BLL
+Equipo_Error_InventarioDuplicado=Ya existe un equipo con el numero de inventario '{0}'
+Equipo_Error_CrearEquipo=Ocurrio un error al crear el equipo. Por favor verifique los datos e intentelo nuevamente
+Equipo_Exito_ComponentesActualizados=Equipo y componentes actualizados correctamente
+Equipo_Error_ActualizarComponentes=Ocurrio un error al actualizar el equipo o sus componentes
+Equipo_Error_NoExiste=No existe el equipo especificado
+Equipo_Exito_Eliminado=Equipo eliminado correctamente
+Equipo_Error_AsignadoTickets=No se puede eliminar el equipo porque esta asignado a uno o mas tickets
+Equipo_Error_Eliminar=Error al eliminar equipo
+Equipo_Exito_Actualizado=Equipo actualizado correctamente
+Equipo_Error_Actualizar=Error al actualizar equipo
+Equipo_Error_EquipoNoExiste=El equipo no existe
+Equipo_Error_UsuarioNoExiste=El usuario no existe
+Equipo_Exito_Asignado=Equipo asignado correctamente
+Equipo_Error_Asignar=Error al asignar equipo
+Equipo_Exito_AsignacionEliminada=Asignacion eliminada correctamente
+Equipo_Error_QuitarAsignacion=Error al quitar la asignacion
+Equipo_Error_EquipoNulo=El equipo no puede ser nulo
+Equipo_Error_InventarioObligatorio=Debe especificar un numero de inventario para el equipo
+Equipo_Error_ComponentesObligatorios=Debe asignar al menos un componente (RAM, ROM, Procesador, etc.)
+
+# Equipo - Componentes
+Equipo_Componente_NombreObligatorio=El nombre del componente es obligatorio
+Equipo_Componente_CategoriaObligatoria=El componente '{0}' debe tener una categoría asignada
+Equipo_Componente_ProcesadorObligatorio=El nombre del procesador es obligatorio
+Equipo_Componente_ValorPositivo=El valor del componente debe ser mayor a 0
+Equipo_Componente_UnidadObligatoria=La unidad del componente es obligatoria
+
+# --- HISTORIAL ---
+Historial_Form_Titulo=Historial de Equipo
+Historial_Titulo=Historial
+Historial_Subtitulo=Historial del Equipo
+Historial_Col_Id=ID
+Historial_Col_Fecha=Fecha
+Historial_Col_Usuario=Usuario
+Historial_Col_Accion=accion
+Historial_Col_Detalle=Detalle
+Historial_Col_Nivel=Nivel
+Historial_Col_EquipoId=Equipo ID
+
+# --- GESTION MAESTROS ---
+Gestion_Maestros=Gestion de Maestros
+Seleccione_Tipo_Maestro=Seleccione el tipo de maestro
+Maestro_Prioridades=Prioridades
+Maestro_Estados=Estados
+Maestro_Categorias=Categorias
+Maestro_Ubicaciones=Ubicaciones
+Boton_Agregar_Maestro=Agregar
+Boton_Editar_Maestro=Editar
+Boton_Eliminar_Maestro=Eliminar
+Seleccione_Item_Editar=Seleccione un item para editar
+Seleccione_Item_Eliminar=Seleccione un item para eliminar
+Ingrese_Nuevo_Nombre=Ingrese el nuevo nombre
+Editar_Item=Editar Ãtem
+Item_Editado_OK=Ãtem editado correctamente
+Item_Eliminado_OK=Ãtem eliminado correctamente
+Tipo_maestro_no_soportado=Tipo de maestro no soportado
+
+# --- CAMBIO DE IDIOMA ---
+Confirmar_Cambio_Idioma=Desea cambiar el idioma de la aplicacion?
+Idioma_Cambiado_Exitosamente=El idioma se ha cambiado exitosamente
+Error_Cambiar_Idioma=Error al cambiar el idioma
+
+# --- CLAVES AGREGADAS AUTOMÃƒÂTICAMENTE (2026-02-21 02:00) ---
+Adjuntar_Archivo=Adjuntar Archivo
+Adjunto_Tamanio_Maximo=Adjunto Tamanio Maximo
+Adjuntos=Adjuntos
+Analiticas=Analiticas
+Archivo_Descargado=Archivo Descargado
+Backup=Backup
+Bitacora=Bitacora
+Bitacora_Col_Accion=accion
+Bitacora_Col_Detalle=Detalle
+Bitacora_Col_Fecha=Fecha y Hora
+Bitacora_Col_Nivel=Nivel
+Bitacora_Col_Usuario=Usuario
+Cambios_guardados_correctamente=Cambios guardados correctamente
+Casos=Casos
+Confirmar_eliminacion=Confirmar eliminacion
+Confirmar_Eliminar_Familia=Confirmar Eliminar Familia
+Confirmar_Eliminar_Item=Confirmar Eliminar Item
+Confirmar_Eliminar_Patente=Confirmar Eliminar Patente
+Confirmar_Eliminar_Usuario=Confirmar Eliminar Usuario
+Crear=Crear
+Crear_Ticket=Crear Ticket
+Error_al_asignar_patente_familia=Error al asignar patente familia
+Error_al_cambiar_familia_seleccionada=Error al cambiar familia seleccionada
+Error_al_cambiar_usuario_seleccionado=Error al cambiar usuario seleccionado
+Error_al_cargar_accesos_usuario=Error al cargar accesos usuario
+Error_al_cargar_familias=Error al cargar familias
+Error_al_cargar_patentes=Error al cargar patentes
+Error_al_cargar_patentes_familia=Error al cargar patentes familia
+Error_al_cargar_usuarios=Error al cargar usuarios
+Error_al_crear_familia=Error al crear familia
+Error_al_crear_patente=Error al crear patente
+Error_al_dibujar_pestanas=Error al dibujar pestanas
+Error_al_eliminar_familia=Error al eliminar familia
+Error_al_eliminar_patente=Error al eliminar patente
+Error_al_eliminar_usuario=Error al eliminar usuario
+Error_al_guardar_cambios=Error al guardar cambios
+Error_al_limpiar_listas_usuario=Error al limpiar listas usuario
+Error_al_mover_elementos=Error al mover elementos
+Error_al_quitar_patente_familia=Error al quitar patente familia
+Error_al_recargar_datos=Error al recargar datos
+Error_Archivo_No_Encontrado=Error Archivo No Encontrado
+Error_Cargar_Bitacora=Error Cargar Bitacora
+Error_General=Error General
+Error_Usuario_No_Autenticado=Error Usuario No Autenticado
+Error_Validacion=Error Validacion
+Familia_creada_correctamente=Familia creada correctamente
+Fecha_Vencimiento=Fecha Vencimiento
+Gestion_de_Accesos=Gestion de Accesos
+Gestion_Accesos=Accesos
+Gestion_de_Inventario=Gestion de Inventario
+Gestion_Maestros=Gestion Maestros
+Guardar_Archivo=Guardar Archivo
+Ingrese_Nombre_Item=Ingrese Nombre Item
+Ingrese_nombre_nueva_familia=Ingrese nombre nueva familia
+Ingrese_nombre_nueva_patente=Ingrese nombre nueva patente
+Inventario_Export_Header_ID=Inventario Export Header ID
+Inventario_Export_Header_Modelo=Inventario Export Header Modelo
+Inventario_Export_Header_NroInventario=Inventario Export Header NroInventario
+Inventario_Export_Header_Procesador=Inventario Export Header Procesador
+Inventario_Export_Header_RAM=Inventario Export Header RAM
+Inventario_Export_Header_ROM=Inventario Export Header ROM
+Inventario_Export_Header_Tipo=Inventario Export Header Tipo
+Inventario_Export_Header_Ubicacion=Inventario Export Header Ubicacion
+Inventario_Export_Header_Usuario=Inventario Export Header Usuario
+Item_Creado_OK=Item Creado OK
+Maestro_CategoriasItem=Maestro CategoriasItem
+Maestro_TiposEquipo=Maestro TiposEquipo
+Maestro_UbicacionesEquipo=Maestro UbicacionesEquipo
+MAIN_Header_Welcome=Bienvenido
+Msg_Acceso_Denegado_Detalle=No tienes permisos para acceder a este recurso
+Msg_Fecha_Invalida=Msg Fecha Invalida
+Nueva_Familia=Nueva Familia
+Nueva_Patente=Nueva Patente
+Nuevo_Item=Nuevo Item
+Patente_creada_correctamente=Patente creada correctamente
+Patente_eliminada_correctamente=Patente eliminada correctamente
+Politica_SLA=Politica SLA
+Recuperacion_Error_Envio=Recuperacion Error Envio
+Recuperacion_Msg_Codigo_Enviado=Recuperacion Msg Codigo Enviado
+Recuperacion_Msg_Codigo_Enviado_A=Recuperacion Msg Codigo Enviado A
+Recuperacion_Msg_Error_Envio=Recuperacion Msg Error Envio
+Recuperacion_Msg_Ingresar_Usuario=Recuperacion Msg Ingresar Usuario
+Recuperacion_Msg_Sin_Email=Recuperacion Msg Sin Email
+Recuperacion_Msg_Usuario_No_Existe=Recuperacion Msg Usuario No Existe
+Resuelto_el=Resuelto el
+Seleccionar_Archivo=Seleccionar Archivo
+Seleccione_un_usuario_antes_de_guardar=Seleccione un usuario antes de guardar
+Seleccione_un_usuario_para_eliminar=Seleccione un usuario para eliminar
+Sin_Adjuntos=Sin Adjuntos
+SLA_Cumplido=SLA Cumplido
+SLA_Incumplido=SLA Incumplido
+SLA_OK=OK ({0}h restantes)
+SLA_Por_Vencer=Por Vencer ({0}h)
+SLA_Vencido_Hace=Vencido hace {0}h
+Tecnico=Tecnico
+Usuario_eliminado_correctamente=Usuario eliminado correctamente
+
+# --- LOGIN FORM ---
+LOGIN_Title=Iniciar Sesion
+LOGIN_UsernameLabel=Usuario
+LOGIN_PasswordLabel=Contrasena
+LOGIN_ButtonLogin=Ingresar
+LOGIN_ButtonRegister=Registrarse
+LOGIN_ButtonForgot=Olvido su Contrasena?
+LOGIN_Error_InvalidCredentials=Usuario o Contrasena incorrectos
+LOGIN_Error_NoFamily=El usuario no tiene permisos asignados
+LOGIN_Error_NoClosingApp=No se puede volver al login sin cerrar la aplicacion
+
+# Login - Validaciones BLL
+Login_Error_UsuarioObligatorio=El nombre de usuario es obligatorio
+Login_Error_PasswordObligatoria=La contraseña es obligatoria
+Login_Error_UsuarioMinCaracteres=El nombre de usuario debe tener al menos 3 caracteres
+Login_Error_CredencialesInvalidas=Usuario o contrasena invalidos
+Login_Error_PasswordMinCaracteres=La contraseña debe tener al menos 8 caracteres
+Login_Error_UsuarioDuplicado=Ya existe un usuario con el nombre '{0}'
+Login_Error_EmailDuplicado=Ya existe un usuario con el email '{0}'
+Login_Error_FamiliaAdminNoEncontrada=No se encontró la familia Administrador en la base de datos
+Login_Error_FamiliaDefaultNoEncontrada=No hay una familia por defecto configurada en la base de datos
+Login_Error_RegistroFallido=No se pudo registrar el usuario en el sistema
+
+# Usuario - Validaciones BLL
+Usuario_Error_NombreFamiliaObligatorio=El nombre de la familia es obligatorio
+Usuario_Error_UsuarioNulo=El usuario no puede ser nulo
+Usuario_Error_IdObligatorio=El ID del usuario es obligatorio y debe ser válido
+Usuario_Error_UsuarioNoEncontrado=Usuario con ID '{0}' no fue encontrado
+Usuario_Error_UsuarioConAsociaciones=No se puede eliminar el usuario '{0}' porque tiene familias o patentes asociadas
+
+# --- GENERAL UI ---
+Panel_Tecnico=Panel de Tecnico
+Buscar=Buscar
+Limpiar=Limpiar
+Cerrar_Sesion=Cerrar Sesion
+Usuarios=Usuarios
+Familias=Familias
+Patentes=Patentes
+Asignadas=Asignadas
+Disponibles=Disponibles
+Mover_Izquierda=Mover a Izquierda
+Mover_Derecha=Mover a Derecha
+Nueva=Nueva
+Agregar=Agregar
+Register=Registrarse
+Contrasena=Contrasena
+Registrarse=Registrarse
+Refresh=Actualizar
+Buscar_Label=Buscar
+
+# --- TICKET CLIENTE ---
+Ticket_Cliente_LabelTitulo=Titulo
+Ticket_Cliente_LabelDescripcion=Descripcion
+Ticket_Cliente_LabelCategoria=Categoria
+Ticket_Cliente_LabelUbicacion=Ubicacion
+Ticket_Cliente_LabelEquipo=Equipo
+Ticket_Cliente_BotonCrear=Crear Ticket
+
+# --- GESTIÃ“N DE ACCESOS ---
+Eliminar_Usuario=Eliminar Usuario
+Guardar_Cambios=Guardar Cambios
+Patentes_del_usuario=Patentes del Usuario
+Familias_del_usuario=Familias del Usuario
+Seleccione_un_usuario=Seleccione un Usuario
+Patentes_de_la_familia_seleccionada=Patentes de la Familia Seleccionada
+Gestion_de_Familias=Gestion de Familias
+Seleccione_una_familia=Seleccione una Familia
+Eliminar_Patente=Eliminar Patente
+Guardar_Patentes=Guardar Patentes
+Renombrar=Renombrar
+Izquierda=Izquierda
+Derecha=Derecha
+<=<
+>=>
+
+# --- INVENTARIO ---
+Inventario_Gestion_Form_Titulo=Gestion de Inventario
+Inventario_Gestion_Tab_Equipos=Equipos
+Inventario_Gestion_Tab_Items=Items
+Inventario_Gestion_BotonExportarEquipos=Exportar Equipos
+Inventario_Gestion_LabelFiltroEquipos=Filtrar Equipos
+Inventario_Gestion_LabelFiltroItems=Filtrar Items
+Inventario_Gestion_BotonAgregarEquipo=Agregar Equipo
+Inventario_Gestion_BotonAgregarItem=Agregar Item
+Inventario_Gestion_BotonLimpiarEquipos=Limpiar Filtros
+Inventario_Gestion_BotonLimpiarItems=Limpiar Filtros
+
+# --- ANALÃTICAS ---
+VistaAnaliticas=Analiticas
+
+# --- BITÃCORA ---
+Bitacora_Titulo=Bitacora
+Bitacora_Subtitulo=Visualiza el historial de eventos y acciones del sistema
+Bitacora_Filtro_Hasta=Hasta
+Bitacora_Filtro_Desde=Desde
+Bitacora_Filtro_Nivel=Nivel
+Bitacora_Filtro_Usuario=Usuario
+Bitacora_Filtro_Accion=accion
+Bitacora_Btn_Limpiar=Limpiar Filtros
+Bitacora_Btn_Buscar=Buscar
+Bitacora_Total_Registros=Total de registros
+
+# --- CASOS (VISTA MAIN) ---
+Casos_Titulo=Gestion de Casos
+Casos_Subtitulo=Panel de Gestion de tickets de soporte Tecnico
+
+# --- BACKUPS ---
+Gestion_Backups=Gestion de Backups
+Open_Backup_Folder=Abrir Carpeta de Backups
+Restore_Backup=Restaurar Backup
+Backup_Services=Backup de Servicios
+Backup_Tickets=Backup de Tickets
+
+# --- RECUPERACIÃ“N DE CONTRASEÃ‘A ---
+Recuperacion_Titulo_Form=Recuperar Contrasena
+Recuperacion_Boton_Enviar=Enviar Codigo
+Recuperacion_Label_Usuario=Usuario
+Recuperacion_Titulo_Label=Recuperacion de Contrasena
+
+# Recuperación - Validaciones BLL
+Recuperacion_Error_EmailVacio=El email no puede estar vacio
+Recuperacion_Error_CorreoCodigoObligatorios=El correo y el codigo son obligatorios
+Recuperacion_Error_CorreoPasswordObligatorios=El correo y la nueva contrasena son obligatorios
+
+# --- REGISTER FORM ---
+Correo_Electronico=Correo Electronico
+Nombre_de_Usuario=Nombre de Usuario
+
+# --- INVENTARIO DETALLE EQUIPO ---
+Inventario_DetalleEquipo_Form_Titulo=Detalle del Equipo
+Inventario_DetalleEquipo_BotonCerrar=Cerrar
+Inventario_DetalleEquipo_BotonGuardar=Guardar
+Inventario_DetalleEquipo_BotonAsignarUsuario=Asignar Usuario
+Inventario_DetalleEquipo_BotonQuitarUsuario=Quitar Usuario
+Inventario_DetalleEquipo_LabelProcesador=Procesador
+Inventario_DetalleEquipo_LabelModelo=Modelo
+Inventario_DetalleEquipo_LabelRAM=RAM
+Inventario_DetalleEquipo_LabelROM=ROM
+Inventario_DetalleEquipo_LabelUsuario=Usuario
+Inventario_DetalleEquipo_LabelInventario=Nro. Inventario
+
+# --- INVENTARIO NUEVO EQUIPO ---
+Inventario_NuevoEquipo_Form_Titulo=Nuevo Equipo
+Inventario_NuevoEquipo_LabelTituloDatos=Datos del Equipo
+Inventario_NuevoEquipo_LabelInventario=Nro. Inventario
+Inventario_NuevoEquipo_LabelModelo=Modelo
+Inventario_NuevoEquipo_LabelUbicacion=Ubicacion
+Inventario_NuevoEquipo_LabelProcesador=Procesador
+Inventario_NuevoEquipo_LabelTipo=Tipo
+Inventario_NuevoEquipo_LabelRAM=RAM
+Inventario_NuevoEquipo_BotonAgregarRAM=Agregar RAM
+Inventario_NuevoEquipo_LabelROM=ROM
+Inventario_NuevoEquipo_BotonAgregarROM=Agregar ROM
+Inventario_NuevoEquipo_BotonGuardar=Guardar
+Inventario_NuevoEquipo_BotonCancelar=Cancelar
+
+# --- INVENTARIO NUEVO ITEM ---
+Inventario_NuevoItem_LabelCodigo=Codigo
+Inventario_NuevoItem_LabelNombre=Nombre
+Inventario_NuevoItem_LabelCategoria=Categoria
+Inventario_NuevoItem_LabelCantidad=Cantidad
+Inventario_NuevoItem_LabelValor=Valor
+Inventario_NuevoItem_LabelUnidad=Unidad
+Inventario_NuevoItem_LabelUbicacion=Ubicacion
+Inventario_NuevoItem_LabelDisponible=Disponible
+Inventario_NuevoItem_LabelDescripcion=Descripcion
+Inventario_NuevoItem_BotonGuardar=Guardar
+Inventario_NuevoItem_BotonCancelar=Cancelar
+
+# --- CLIENTE ---
+Login=Iniciar Sesion
+Panel_Cliente=Panel de Cliente
+Cliente_Titulo_MisTickets=Mis Tickets
+Cliente_Boton_NuevoTicket=Nuevo Ticket
+
+# --- LOGIN ADICIONALES ---
+LOGIN_Welcome=Bienvenido a
+LOGIN_AppDescription=Sistema de Gestion de tickets
+
+# --- RECUPERACIÃ“N CONTRASEÃ‘A ADICIONALES ---
+Recuperacion_Subtitulo=Ingresa tu nombre de usuario y te enviaremos un codigo de verificacion a tu correo electronico.
+Recuperacion_Boton_Volver=Volver al Login
+
+# --- REGISTRO ADICIONALES ---
+Register_Titulo=Crear Cuenta
+Register_Subtitulo=Completa los datos para crear tu cuenta.
+Register_Requisitos=Minimo 8 caracteres, incluir mayusculas, minusculas y numeros.
+Register_Boton_Crear=Crear Cuenta
+Register_Boton_Volver=Volver al Login
+
+# --- VALIDAR CÃ“DIGO ---
+ValidarCodigo_TituloVentana=Validacion de codigo
+ValidarCodigo_Titulo=Validar Codigo
+ValidarCodigo_Subtitulo=Ingresa el codigo de 6 digitos que recibiste en tu correo electronico.
+ValidarCodigo_Label=Codigo de verificacion
+ValidarCodigo_Boton_Validar=Validar codigo
+
+# --- CAMBIAR CONTRASEÃ‘A ---
+CambiarPassword_TituloVentana=Cambio de Contrasena
+CambiarPassword_Titulo=Cambiar Contrasena
+CambiarPassword_Subtitulo=Ingresa tu nueva Contrasena. Debe cumplir con los requisitos de seguridad.
+CambiarPassword_Label_Nueva=Nueva Contrasena
+CambiarPassword_Label_Confirmar=Confirmar Contrasena
+CambiarPassword_Boton_Guardar=Guardar nueva Contrasena
+Inventario_DetalleEquipo_LabelSeleccionarUsuario=Seleccionar Usuario
+
+Boton_CerrarSesion=Cerrar Sesion
+Label_Buscar=Buscar
+Boton_Limpiar=Limpiar
+Label_Prioridad=Prioridad
+
+# --- ANALITICAS ---
+Analitica_Titulo_Por_Estado=Distribucion de Tickets por Estado
+Analitica_Titulo_Por_Categoria=Distribucion de Tickets por Categoria
+Analitica_Titulo_Tiempo_Solucion=Tiempo Promedio de Solucion por Tecnico (Horas)
+Analitica_Titulo_Tendencia=Tendencia de Tickets Creados vs Resueltos
+Analitica_Titulo_SLA=Cumplimiento de SLA
+Analitica_Sin_SLA=Sin datos
+Analitica_Horas_Promedio=Horas Promedio
+Analitica_SLA_Cumplidos=Cumplidos
+Analitica_SLA_Vencidos=Vencidos
+Analitica_SLA_En_Curso=En Curso
+Analitica_SLA_Sin_SLA=Sin SLA
+Analitica_Sin_Datos=No hay datos de tickets para generar analiticas en este momento.
+Analitica_Sin_Datos_Titulo=Sin Datos
+Analitica_Tickets_Creados=Tickets Creados
+Analitica_Tickets_Resueltos=Tickets Resueltos
+Filtro_SLA_Vencidos=Vencidos
+Filtro_SLA_Sin_SLA=Sin SLA
+
+Comentario_Interno=Comentario Interno
+Enviar=Enviar
+No_Disponible=No disponible
+
+Bitacora_Mostrando_Ultimos=(mostrando últimos {0} registros)
+
+Maestros_Label_Seleccione_Tipo=Seleccione el tipo
+
+Accesos=Accesos
+
+Todos=Todos
+
+Technician=Tecnico
+
+Analytics=Analiticas
+No_Disponible=No disponible
+
+Bitacora_Mostrando_Ultimos=(mostrando últimos {0} registros)
+
+Maestros_Label_Seleccione_Tipo=Seleccione el tipo
+
+Accesos=Accesos
+
+Todos=Todos
+
+Technician=Tecnico
+
+Analytics=Analiticas
+
+Inventory=Inventario
+
+Access=Accesos
+
+Cases=Casos
+
+Nombre=Nombre
+Descripcion=Descripción
+Editar_Categoria=Editar Categoría
+Nueva_Categoria=Nueva Categoría
+Nombre:=Nombre:
+Descripcion:=Descripción:
+SLA:=SLA:
+btnLimpiarFiltros=Limpiar Filtros
+btnLimpiar=Limpiar Filtros
+
+Name:=Nombre:
+Description:=Descripción:
+Accept=Aceptar
+Cancel=Cancelar
+
+# Inventario - Mensajes faltantes
+Inventario_ItemEliminadoOk=Item eliminado correctamente
+Inventario_ItemAsignadoDebeQuitar=El item está asignado, debe quitarlo antes de eliminarlo
+Inventario_ItemNoExiste=El item de inventario no existe
+Inventario_NoSePudoEliminar=No se pudo eliminar el item de inventario
+Inventario_ErrorEliminarItem=Error al eliminar el item de inventario
+Inventario_ItemNoEncontrado=El item de inventario no fue encontrado
+Inventario_ErrorAgregarItem=Error al agregar el item al inventario
+Inventario_ErrorModificarItem=Error al modificar el item
+Inventario_ErrorAsignarItem=Error al asignar el item al equipo
+Inventario_ErrorQuitarItem=Error al quitar el item del equipo
+
+# --- FASE 1: MENSAJES CRITICOS SISTEMA Y AUTH (2026-03-11) ---
+
+# Program.cs - Errores Criticos del Sistema
+Sistema_Error_SQL_NoConexion_Mensaje=No se puede conectar al servidor SQL Server.\n\nPosibles causas:\n  - El servicio SQL Server esta detenido\n  - El servidor no esta accesible en la red\n  - El nombre del servidor es incorrecto\n  - El puerto esta bloqueado por firewall\n\nSoluciones recomendadas:\n  1. Verificar que SQL Server este ejecutandose\n  2. Revisar la cadena de conexion en App.config\n  3. Probar conexion con SQL Server Management Studio\n  4. Verificar configuracion de red y firewall
+Sistema_Error_SQL_NoConexion_Titulo=ERROR DE BASE DE DATOS
+Sistema_Error_SQL_Detalle=Error de conexion SQL Server:\n\n{0}\n\nNo se pudo escribir el log de error.
+Sistema_Error_SQL_Titulo_Corto=Error de Conexion - TicketPro
+Sistema_Error_SQL_Titulo_Fatal=Error SQL Critico
+Sistema_Error_Critico_Mensaje=Error critico: {0}\n\nNo se pudo escribir el log de error.
+Sistema_Error_Critico_Titulo=Error Critico - TicketPro
+Sistema_Error_Critico_Titulo_Fatal=Error Critico Fatal
+
+# LogIn Form - Labels y Botones adicionales
+LOGIN_AppSubtitle=Sistema de Gestion de Tickets
+LOGIN_AppTitle=TicketsPro
+LOGIN_LabelUsername=Nombre de Usuario
+LOGIN_LabelPassword=Contrasena
+LOGIN_LabelForgot=Olvidaste tu Contrasena?
+LOGIN_OrSeparator=-------  o  -------
+LOGIN_ButtonCreateAccount=Crear una cuenta
+LOGIN_WindowTitle=TicketsPro - Iniciar Sesion
+
+# Register Form - Labels y Botones
+Register_WindowTitle=Registrarse - TicketsPro
+Register_LabelEmail=Correo Electronico
+Register_LabelUser=Nombre de Usuario
+Register_LabelPassword=Contrasena
+Register_LabelRequisitos=Minimo 8 caracteres, incluir mayusculas, minusculas y numeros.
+Register_ButtonRegister=Crear Cuenta
+Register_ButtonVolver=Volver al Login
+
+# RecuperarPassword Form
+Recuperar_WindowTitle=Recuperar Contrasena - TicketsPro
+Recuperar_LabelTitulo=Recuperar Contrasena
+Recuperar_LabelSubtitulo=Ingresa tu nombre de usuario y te enviaremos un codigo de verificacion a tu correo electronico.
+Recuperar_LabelUser=Nombre de Usuario
+Recuperar_LabelEstado=
+Recuperar_ButtonEnviar=Enviar Codigo
+Recuperar_ButtonVolver=Volver al Login
+
+# ValidarCodigo Form
+ValidarCodigo_WindowTitle=Validacion de codigo
+ValidarCodigo_LabelTitulo=Validar Codigo
+ValidarCodigo_LabelSubtitulo=Ingresa el codigo de 6 digitos que recibiste en tu correo electronico.
+ValidarCodigo_LabelCodigo=Codigo de verificacion
+ValidarCodigo_ButtonValidar=Validar codigo
+ValidarCodigo_ButtonVolver=Volver al Login
+
+# CambiarPassword Form
+CambiarPassword_WindowTitle=Cambio de Contrasena
+CambiarPassword_LabelTitulo=Cambiar Contrasena
+CambiarPassword_LabelSubtitulo=Ingresa tu nueva Contrasena. Debe cumplir con los requisitos de seguridad.
+CambiarPassword_LabelNueva=Nueva Contrasena
+CambiarPassword_LabelConfirmar=Confirmar Contrasena
+CambiarPassword_LabelRequisitos=La Contrasena debe tener al menos 8 caracteres, incluir mayusculas, minusculas y numeros.
+CambiarPassword_ButtonGuardar=Guardar nueva Contrasena
+CambiarPassword_ButtonVolver=Volver al Login
+
+# RegisterPresenter - Validaciones
+Register_Error_CamposIncompletos=Completa todos los campos (usuario, Contrasena y correo).
+Register_Error_CamposIncompletos_Titulo=Campos obligatorios
+Register_Error_PasswordInsegura=La Contrasena debe tener al menos 8 caracteres e incluir mayusculas, minusculas y numeros.
+Register_Error_PasswordInsegura_Titulo=Contrasena insegura
+Register_Error_EmailInvalido=Correo electronico invalido.
+Register_Error_EmailInvalido_Titulo=Error
+Register_Exito_UsuarioCreado=Usuario registrado correctamente.
+Register_Exito_UsuarioCreado_Titulo=Registro exitoso
+Register_Error_RegistroFallido=Error al registrar usuario
+
+# CambiarPasswordPresenter - Validaciones
+CambiarPassword_Error_CamposVacios=Por favor completa ambos campos.
+CambiarPassword_Error_CamposVacios_Titulo=Advertencia
+CambiarPassword_Error_PasswordsNoCoinciden=Las Contrasenas no coinciden.
+CambiarPassword_Error_PasswordsNoCoinciden_Titulo=Error
+CambiarPassword_Exito_Actualizada=Contrasena actualizada correctamente.
+CambiarPassword_Exito_Actualizada_Titulo=Exito
+CambiarPassword_Error_NoActualizada=No se pudo actualizar la Contrasena.
+CambiarPassword_Error_General=Ocurrio un error al cambiar la Contrasena.
+CambiarPassword_Error_General_Detalle=Error al cambiar Contrasena: {0}
+
+# ValidarCodigoPresenter - Validaciones
+ValidarCodigo_Error_CodigoVacio=Por favor, ingresa el codigo recibido.
+ValidarCodigo_Error_CodigoVacio_Titulo=Advertencia
+
+# RecuperarPasswordPresenter - Validaciones
+RecuperarPassword_Error_EnvioCodigo=Error al enviar codigo de recuperacion: {0}
+RecuperarPassword_Error_EnvioCodigo_Titulo=Error
+
+# LogInPresenter - Validaciones
+Login_Error_InicioSesion_Titulo=Error en inicio de Sesion
+
+# --- FASE 2: TICKETS Y INVENTARIO (2026-03-11) ---
+
+# DetalleTicketPresenter - Textos por defecto
+Ticket_Detalle_SinAsignar=Sin asignar
+Ticket_Detalle_Desconocido=Desconocido
+Ticket_Detalle_Interno_Prefijo=[INTERNO]
+
+# CrearTicketPresenter - Validaciones y errores
+Ticket_Error_EstadoNuevoNoEncontrado=Error: No se encontro el estado 'Nuevo' en la base de datos.
+Ticket_Error_Negocio_Titulo=Error de Negocio
+Ticket_Error_CargarDatosIniciales=Error al cargar los datos iniciales:\n{0}
+Ticket_Error_CrearTicket=Error al crear ticket:\n{0}
+
+# EditarTicketPresenter - Validaciones
+Ticket_Error_CargarCombos=Error al cargar listados: {0}
+Ticket_Error_CargarTicket=Error al cargar el ticket: {0}
+
+# SolucionTicketPresenter - Errores
+Ticket_Solucion_Error_Guardar=Error al guardar solucion
+
+# FormClientePresenter - Estados y errores
+Ticket_Cliente_Estado_Todos=Todos
+Ticket_Cliente_Estado_Nuevo=Nuevo
+Ticket_Cliente_Estado_EnProgreso=EnProgreso
+Ticket_Cliente_Estado_Resuelto=Resuelto
+Ticket_Cliente_Error_CargarTickets=Error al cargar tickets del usuario
+Ticket_Cliente_Error_VerificarPermisos=Error al verificar permisos para crear ticket
+Ticket_Cliente_Error_CerrarSesion=Error al cerrar Sesion
+
+# CrearTicketClientePresenter - Validaciones
+Ticket_Cliente_Error_CategoriaUbicacion=Debe seleccionar Categoria y Ubicacion.
+Ticket_Cliente_Error_ArchivoGrande_Titulo=Archivo demasiado grande
+Ticket_Cliente_Error_TipoArchivo_Titulo=Tipo de archivo no permitido
+Ticket_Cliente_Error_ArchivoDuplicado_Titulo=Archivo duplicado
+Ticket_Cliente_Error_SeleccioneArchivo=Por favor, seleccione un archivo para eliminar.
+Ticket_Cliente_Error_SeleccionRequerida_Titulo=Seleccion requerida
+Ticket_Cliente_Confirmar_EliminarArchivos=Desea eliminar {0} archivo(s) de la lista?
+Ticket_Cliente_Confirmar_EliminarArchivos_Titulo=Confirmar eliminacion
+
+# FormNuevoEquipoPresenter - Validaciones y errores
+Equipo_Error_UbicacionNoEncontrada=Error: No se encontro una Ubicacion valida en la base de datos.
+Equipo_Estado_Activo=Activo
+Equipo_Error_ComponentesObligatorios=Debe agregar al menos un componente con nombre (RAM, ROM o Procesador).
+Equipo_Error_IniciarFormulario=Error al iniciar formulario: {0}
+Equipo_Error_ConsultarDependencias=Error al consultar dependencias de base de datos: {0}
+Equipo_Error_CargarDatos=Error al cargar datos relacionados: {0}
+Equipo_Error_CargarCategoriaProcesador=Error al cargar categoria de procesador: {0}
+Equipo_Error_CargarCategoriaRAM=Error al cargar categoria RAM: {0}
+Equipo_Error_CargarCategoriaROM=Error al cargar categoria ROM: {0}
+Equipo_Error_GuardarEquipo=Error al guardar equipo: {0}
+
+# VistaMainFormPresenter - Filtros y permisos
+Main_Filtro_Todas=Todas
+Main_Filtro_Todos=TODOS
+Main_Filtro_Vencidos=VENCIDOS
+Main_Filtro_PorVencer=POR_VENCER
+Main_Filtro_OK=OK
+Main_Filtro_SinSLA=SIN_SLA
+Main_Error_InicializarFiltros=Error al inicializar filtros
+Main_Error_CargarTickets=Error al cargar los tickets
+
+# FormGestionInventarioPresenter - Errores
+Inventario_Error_CargarDatos=Error al cargar datos de inventario: {0}
+
+# DetalleTicket Form - Labels y Botones
+Ticket_Detalle_IntegridadTitulo=Integridad comprometida
+Ticket_Detalle_IntegridadVerIgual=Ver igualmente
+Ticket_Detalle_IntegridadCerrar=Cerrar
+Ticket_Detalle_ComentarioInterno=Comentario Interno
+Ticket_Detalle_ButtonEnviar=Enviar
+Ticket_Detalle_ButtonEditar=Editar
+Ticket_Detalle_ButtonResolver=Resolver
+Ticket_Detalle_ButtonCerrar=Cerrar
+Ticket_Detalle_Error_AbrirFormularioSolucion=Error al abrir formulario de solucion
+Ticket_Detalle_Error_AbrirFormularioEdicion=Error al abrir formulario de edicion
+
+# SolucionTicketForm - Labels y Botones
+Ticket_Solucion_Titulo=Resolver Ticket
+Ticket_Solucion_Subtitulo=Describe la solucion implementada para resolver este ticket.
+Ticket_Solucion_TicketId=Ticket ID: #{0}
+Ticket_Solucion_Label=Descripcion de la solucion
+Ticket_Solucion_ButtonGuardar=Guardar y resolver ticket
+Ticket_Solucion_ButtonCancelar=Cancelar
+Ticket_Solucion_FormTitulo=Resolver Ticket
+
+# CrearTicket Form - Labels y Botones
+Ticket_Crear_TituloForm=Crear Nuevo Ticket
+Ticket_Crear_LabelTitulo=Titulo
+Ticket_Crear_LabelDescripcion=Descripcion
+Ticket_Crear_LabelCategoria=Categoria
+Ticket_Crear_LabelUbicacion=Ubicacion
+Ticket_Crear_LabelTecnico=Tecnico
+Ticket_Crear_LabelEquipo=Equipo
+Ticket_Crear_LabelPrioridad=Prioridad
+Ticket_Crear_ButtonCrear=Crear Ticket
+Ticket_Crear_WindowTitulo=Crear Ticket - TicketsPro
+
+# CrearTicketCliente Form - Labels y Botones
+Ticket_Cliente_TituloSeccion=Crear Nuevo Ticket
+Ticket_Cliente_LabelTituloTicket=Titulo del Ticket *
+Ticket_Cliente_LabelDescripcion=Descripcion del Problema
+Ticket_Cliente_LabelCategoria=Categoria *
+Ticket_Cliente_LabelUbicacion=Ubicacion *
+Ticket_Cliente_LabelEquipo=Equipo (Opcional)
+Ticket_Cliente_LabelAdjuntos=Archivos Adjuntos
+Ticket_Cliente_ColumnNombre=Nombre del Archivo
+Ticket_Cliente_ColumnTamanio=tamano
+Ticket_Cliente_ButtonAgregarAdjunto=+ Agregar
+Ticket_Cliente_ButtonEliminarAdjunto=Eliminar
+Ticket_Cliente_LabelAdjuntosInfo=Max 10 MB por archivo. Permitidos: PDF, Word, Excel, imagenes, ZIP
+Ticket_Cliente_ButtonCrearTicket=Crear Ticket
+Ticket_Cliente_ButtonCancelar=Cancelar
+Ticket_Cliente_WindowTitulo=Crear Ticket - TicketsPro
+
+# FormCliente - Labels y Botones
+Cliente_ButtonCerrarSesion=Cerrar Sesion
+Cliente_ButtonNuevoTicket=+ Nuevo Ticket
+Cliente_LabelUsuario=Usuario: ---
+Cliente_LabelTitulo=Mis Tickets
+Cliente_ButtonLimpiar=Limpiar
+Cliente_LabelBuscar=Buscar:
+Cliente_LabelFiltroEstado=Estado:
+Cliente_WindowTitulo=Panel Cliente
